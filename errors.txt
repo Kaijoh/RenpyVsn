@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/events.rpy", line 66: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Continue?"
+               ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Tue Mar 21 16:08:58 2023
