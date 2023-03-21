@@ -4,23 +4,24 @@ label Act1:
     # The game starts here.
     "The protagonist is cleaning out the school library when they come across a mysterious book...."
     
-    "What's this? 'The Lost Pages'? It looks pretty old...and it's missing some pages too."
+    PlayerName "What's this? 'The Lost Pages'? It looks pretty old...and it's missing some pages too."
 
     "The protagonist starts to read the book and suddenly gets transported into the story world."
-
-    "Whoa! What's happening? This is amazing...and kind of scary too."
-
-    "The protagonist meets a friendly character, named Robin, who offers to help them navigate this new world."
     hide pic_1
 
-    show pic_2
+    show teleport
+    pause
+    PlayerName "Whoa! What's happening? This is amazing...and kind of scary too."
+    hide teleport
 
+    show pic_2
+    "The protagonist meets a friendly character, named Robin, who offers to help them navigate this new world."
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images directory.
 
     "Greetings! I'm Robin, and I'm here to help you on your journey. You've entered the world of 'The Lost Pages', a land filled with magic and mystery."
 
-    "Wow, this is incredible. But I don't know how to get back home. And what's this about missing pages?"
+    PlayerName "Wow, this is incredible. But I don't know how to get back home. And what's this about missing pages?"
 
     "Ah, yes. The book you entered is missing some important pages. We need to find them if you want to return to your own world."
     hide pic_2
@@ -44,7 +45,7 @@ label Act1:
 
     "ohhhhhh! what is this?"
 
-    "i haven't seen anything like this before"
+    PlayerName "i haven't seen anything like this before"
 
     "eileen picked up the book."
 

@@ -5,6 +5,7 @@ image pic_1 = im.Scale("1.png", 1920, 1080)
 image pic_2 = im.Scale("2.png", 1920, 1080)
 image pic_3 = im.Scale("3.png", 1920, 1080)
 image idle_1 = im.Scale("idle.jpg", 1920, 1080)
+image teleport = Movie(size=(1920,1080), channel="movie", play="Videos/tele.ogv", loop=True)
 
 #characters
 image protagonist = im.Scale("tia mouth_c eye_full brow_down ex_blush.png", 1920, 1080)
@@ -17,9 +18,9 @@ label start:
 
     call variables
 
-    jump Act1
-
     hide idle_1
+
+    jump Act1
         
     return
 
