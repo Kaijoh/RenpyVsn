@@ -1,17 +1,19 @@
+
+
 label Act1:
 
     show pic_1
     # The game starts here.
     "The protagonist is cleaning out the school library when they come across a mysterious book...."
     
-    PlayerName "What's this? 'The Lost Pages'? It looks pretty old...and it's missing some pages too."
+    player_name "What's this? 'The Lost Pages'? It looks pretty old...and it's missing some pages too."
 
     "The protagonist starts to read the book and suddenly gets transported into the story world."
     hide pic_1
 
     show teleport
     pause
-    PlayerName "Whoa! What's happening? This is amazing...and kind of scary too."
+    player_name "Whoa! What's happening? This is amazing...and kind of scary too."
     hide teleport
 
     show pic_2
@@ -21,9 +23,9 @@ label Act1:
 
     "Greetings! I'm Robin, and I'm here to help you on your journey. You've entered the world of 'The Lost Pages', a land filled with magic and mystery."
 
-    PlayerName "Wow, this is incredible. But I don't know how to get back home. And what's this about missing pages?"
+    player_name "Wow, this is incredible. But I don't know how to get back home. And what's this about missing pages?"
 
-    "Ah, yes. The book you entered is missing some important pages. We need to find them if you want to return to your own world."
+    r "Ah, yes. The book you entered is missing some important pages. We need to find them if you want to return to your own world."
     hide pic_2
 
     show pic_3
@@ -32,9 +34,9 @@ label Act1:
 
     menu:
         "Let's find the missing pages!":
-            $ PlayerScore += 1
+            $ player_score += 10
         "I'm too scared. Can't we just leave?":
-            $ PlayerScore += 0
+            $ player_score += -10
 
     show tia mouth_c eye_full brow_down ex_blush at right
     with dissolve
@@ -45,7 +47,7 @@ label Act1:
 
     "ohhhhhh! what is this?"
 
-    PlayerName "i haven't seen anything like this before"
+    player_name "i haven't seen anything like this before"
 
     "eileen picked up the book."
 
@@ -61,14 +63,43 @@ label Act1:
             $ location = renpy.call_screen("MapScreen", _layer="screens")
         "Continue?":
             jump Act2
-
     return
 
 label Act2:
 
-    "aaaaaaa"
+    $ player_name = renpy.input("What is your name?")
+    $ player_score = 0
+    
+    menu:
+        "Let's find the missing pages!":
+            $ player_score += 10
+        "I'm too scared. Can't we just leave?":
+            $ player_score += 5
+            
+    "This is your final score: [player_score]/100"
 
-    return
+
+    # # create a cursor object to interact with the database
+    # mycursor = mydb.cursor()
+
+    # # get the player name and score from the store
+    # player_name = store.player_name
+    # player_score = store.player_score
+
+    # # insert the player score data into the database
+    # sql = "INSERT INTO player_scores (player_name, player_score) VALUES (%s, %s)"
+    # val = (player_name, player_score)
+    # mycursor.execute(sql, val)
+
+    # # commit the changes to the database
+    # mydb.commit()
+
+    # # close the cursor and database connection
+    # mycursor.close()
+    # mydb.close()
+
+
+
     
 label Act3:
 
@@ -95,3 +126,5 @@ label end:
     " Your Total Score is....[PlayerScore]/100"
 
     return
+
+

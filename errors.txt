@@ -2,25 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scripts/events.rpy", line 7: invalid syntax
-    PlayerName "What's this? 'The Lost Pages'? It looks pretty old...and it's missing some pages too."
-                ^
-    
+File "game/script.rpy", line 49: end of line expected.
+    pass submit
+         ^
 
-File "game/scripts/events.rpy", line 11: invalid syntax
-    PlayerName "Whoa! What's happening? This is amazing...and kind of scary too."
-                ^
-    
-
-File "game/scripts/events.rpy", line 23: invalid syntax
-    PlayerName "Wow, this is incredible. But I don't know how to get back home. And what's this about missing pages?"
-                ^
-    
-
-File "game/scripts/events.rpy", line 47: invalid syntax
-    PlayerName "i haven't seen anything like this before"
-                ^
-    
+File "game/script.rpy", line 51: end of line expected.
+    pass notsubmit
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Mar 21 18:35:41 2023
+Sat Mar 25 16:49:50 2023

@@ -4,8 +4,20 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
+# init python:
+#     import mysql.connector
 
-default persistent.player_name = None
+#     db = mysql.connector.connect(
+#         host="localhost",
+#         user="root",
+#         password="",
+#         database="player_score"
+#     )
+
+## Options.rpy
+
+
+
 
 ## Basics ######################################################################
 

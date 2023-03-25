@@ -2,7 +2,7 @@ screen MapScreen():
     frame:
         xalign 0.0
         yalign 0.0
-        background "map.jpg"
+        background im.Scale("map.jpg", 1920, 1080)
         xsize 1920
         ysize 1080
         button:
