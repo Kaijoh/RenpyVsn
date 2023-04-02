@@ -1,31 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 55, in script
-    python:
-  File "game/script.rpy", line 66, in <module>
-    response = requests.post('http://localhost:8000/submit_score/', data=json.dumps(data), headers=headers)
-ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /submit_score/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000005bc0460>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+  File "game/scripts/events.rpy", line 12, in script
+    show tia mouth_c eye_full brow_down ex_blush at right.darken
+  File "game/scripts/events.rpy", line 12, in <module>
+    show tia mouth_c eye_full brow_down ex_blush at right.darken
+AttributeError: 'ATLTransform' object has no attribute 'darken'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 55, in script
-    python:
-  File "G:\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 66, in <module>
-    response = requests.post('http://localhost:8000/submit_score/', data=json.dumps(data), headers=headers)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/requests/api.py", line 116, in post
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/requests/api.py", line 60, in request
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/requests/sessions.py", line 524, in request
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/requests/sessions.py", line 637, in send
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
-ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /submit_score/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000005bc0460>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+  File "game/scripts/events.rpy", line 12, in script
+    show tia mouth_c eye_full brow_down ex_blush at right.darken
+  File "G:\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "G:\renpy-8.0.3-sdk\renpy\ast.py", line 1367, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "G:\renpy-8.0.3-sdk\renpy\ast.py", line 1367, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scripts/events.rpy", line 12, in <module>
+    show tia mouth_c eye_full brow_down ex_blush at right.darken
+AttributeError: 'ATLTransform' object has no attribute 'darken'
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 striped_template 1.0
-Sat Mar 25 20:19:27 2023
+Sun Apr  2 22:03:36 2023
