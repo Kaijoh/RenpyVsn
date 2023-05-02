@@ -205,12 +205,27 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
-screen choice(items):
+screen choice(items, question=None):
     style_prefix "choice"
 
     vbox:
+        if question is not None:
+            frame:
+                # background choice_bg
+                # padding frame_padding
+                # margin frame_margin
+                background "#4b3b3b"
+                xalign 0.5
+                padding (50,100)
+                margin (0,0,10,0)
+                # outline 2
+                text question:
+                    style "question_Style"
         for i in items:
             textbutton i.caption action i.action
+
+style question_Style:
+    size 30
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
