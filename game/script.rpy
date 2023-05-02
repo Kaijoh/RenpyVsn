@@ -84,7 +84,7 @@ transform addpage_bounce:
 #     $ max_pages = 3
 #     $ pages = 0
 
-default player_score = 11
+default player_score = 0
 default max_pages = 3
 default pages = 0
 default max_lives = 3
@@ -109,7 +109,7 @@ label gender:
  
 label variable: 
     $ player_name = renpy.input("what would you like to name your character?") 
-    jump end_game
+    jump Act1
     return 
 
 

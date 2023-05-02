@@ -3,7 +3,7 @@ label Act1:
     show pic_5
     # The game starts here.
     # show girl3 at center, darken
-    window hide
+    # window hide
     ct "Act 1:"
     n "The protagonist is cleaning out the school library when they come across a mysterious book...."
 
@@ -87,7 +87,7 @@ label Act1:
 label Act2:
     scene
     show pic_9
-    window hide
+    # window hide
     ct "Act 2: Search for the Missing Pages"
     n "The protagonist and Robin set off on a quest to find the missing pages. Along the way, they meet various characters and encounter challenges."
 
@@ -136,7 +136,7 @@ label Act2:
             jump end_game
     
 label Act3:
-    window hide
+    # window hide
     ct "Act 3: Learning English Concepts"
 
     n "As they search for the missing pages, the protagonist encounters various English concepts and learns about them through fun and interactive puzzles."
@@ -201,7 +201,7 @@ label Act3_4:
 
 label Act4:
     scene
-    window hide
+    # window hide
     show pic_8 with dissolve
     ct "Act 4: Conclusion...."
 
@@ -223,7 +223,7 @@ label Act4:
     jump Act5
 
 label Act5:
-    window hide
+    # window hide
     ct "Act 5: A New Challenge"
 
     n "............."
@@ -245,7 +245,7 @@ label Act5:
     n "The protagonist go home and starts studying even harder."
 
 label Act6:
-    window hide
+    # window hide
     ct "Act 6: The Quiz"
 
     n "The day of the quiz arrives and the protagonist is nervous but confident."
@@ -276,7 +276,7 @@ label cho2:
     
 
 label Act7:
-    window hide
+    # window hide
     ct "Act 7: Moving Forward..."
 
     n "The protagonist looks back on their journey and feels proud of how far they've come."

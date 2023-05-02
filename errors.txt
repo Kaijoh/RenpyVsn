@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/events.rpy", line 58: expected menuitem
-    jump Act2
-    ^
+File "game/options.rpy", line 135: expected expression
+    default preferences.text_cps = 
+                                   ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr  2 21:26:23 2023
+Tue May  2 22:39:30 2023
