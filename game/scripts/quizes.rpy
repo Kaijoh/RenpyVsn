@@ -1,4 +1,5 @@
-label quiz1:
+label gquiz1:
+    show screen hearts
     show screen fullbooks
     show screen books
     
@@ -6,7 +7,7 @@ label quiz1:
     menu (question="1. What is an adjective?"):
         "a. A word that describes a noun or pronoun":
             $ player_score += 1
-            jump quiz2
+            jump gquiz2
         "b. A word that replaces a noun":
             pass
         "c. A word that describes a verb":
@@ -23,15 +24,15 @@ label quiz1:
     if lives <= 0:
         jump end_game
 
-    jump quiz1
+    jump gquiz1
 
-label quiz2:
+label gquiz2:
     # Answer: a) A word that describes a verb, adjective, or other adverb
     ct "Question Number 2..."
     menu (question="2. What is an adverb?"):
         "a. A word that describes a verb, adjective, or other adverb":
             $ player_score += 1
-            jump quiz3
+            jump gquiz3
         "b. A word that connects two ideas":
             pass
         "c. A word that replaces a noun":
@@ -50,9 +51,9 @@ label quiz2:
         jump end_game
 
 
-    jump quiz2
+    jump gquiz2
 
-label quiz3:
+label gquiz3:
     # Answer: b) beautiful
     ct "Question Number 3..."
     menu (question="3. Which of the following is an example of an adjective?"):
@@ -60,7 +61,7 @@ label quiz3:
             pass
         "b. beautiful":
             $ player_score += 1
-            jump quiz4
+            jump gquiz4
         "c. they":
             pass
         "d. who":
@@ -76,9 +77,9 @@ label quiz3:
     if lives <= 0:
         jump end_game
     
-    jump quiz3
+    jump gquiz3
 
-label quiz4:
+label gquiz4:
     # Answer: b) slowly
     ct "Question Number 4..."
     menu (question="4. Which of the following is an example of an adverb?"):
@@ -86,7 +87,7 @@ label quiz4:
             pass
         "b. slowly":
             $ player_score += 1
-            jump quiz5
+            jump gquiz5
         "c. her":
             pass
         "d. we":
@@ -102,9 +103,9 @@ label quiz4:
     if lives <= 0:
         jump end_game
     
-    jump quiz4
+    jump gquiz4
 
-label quiz5:
+label gquiz5:
     # Answer: c) he
     ct "Question Number 5..."
     menu (question="5. Which of the following is a pronoun?"):
@@ -114,7 +115,7 @@ label quiz5:
             pass
         "c. he":
             $ player_score += 1
-            jump quiz6
+            jump gquiz6
         "d. sweet":
             pass   
 
@@ -128,9 +129,9 @@ label quiz5:
     if lives <= 0:
         jump end_game
     
-    jump quiz5
+    jump gquiz5
 
-label quiz6:
+label gquiz6:
     # Answer: d) they
     ct "Question Number 6..."
     menu (question="6. Which of the following is an example of a personal pronoun?"):
@@ -142,7 +143,7 @@ label quiz6:
             pass
         "d. they":
             $ player_score += 1
-            jump quiz7  
+            jump gquiz7  
 
     $ player_score -= 1
     $ lives -= 1
@@ -154,9 +155,9 @@ label quiz6:
     if lives <= 0:
         jump end_game
     
-    jump quiz6
+    jump gquiz6
 
-label quiz7:
+label gquiz7:
     # Answer: c) my
     ct "Question Number 7..."
     menu (question="7. Which of the following is an example of a possessive pronoun"):
@@ -166,7 +167,7 @@ label quiz7:
             pass
         "c. my":
             $ player_score += 1
-            jump quiz8
+            jump gquiz8
         "d. he":
             pass   
 
@@ -180,15 +181,15 @@ label quiz7:
     if lives <= 0:
         jump end_game
     
-    jump quiz7
+    jump gquiz7
 
-label quiz8:
+label gquiz8:
     # Answer: a) this
     ct "Question Number 8..."
     menu (question="8. Which of the following is an example of a demonstrative pronoun?"):
         "a. this":
             $ player_score += 1
-            jump quiz9
+            jump gquiz9
         "b. him":
             pass
         "c. herself":
@@ -206,9 +207,9 @@ label quiz8:
     if lives <= 0:
         jump end_game
     
-    jump quiz8
+    jump gquiz8
 
-label quiz9:
+label gquiz9:
     # Answer: b) anyone
     ct "Question Number 9..."
     menu (question="9. Which of the following is an example of an indefinite pronoun?"):
@@ -216,7 +217,7 @@ label quiz9:
             pass
         "b. anyone":
             $ player_score += 1
-            jump quiz10
+            jump gquiz10
         "c. these":
             pass
         "d. both":
@@ -232,9 +233,9 @@ label quiz9:
     if lives <= 0:
         jump end_game
     
-    jump quiz10
+    jump gquiz9
 
-label quiz10:
+label gquiz10:
     # Answer: d) all of the above
     ct "Question Number 10..."
     menu (question="10. Which of the following is an example of a reflexive pronoun?"):
@@ -246,7 +247,7 @@ label quiz10:
             pass
         "d. all of the above":
             $ player_score += 1
-            jump scoref 
+            jump gscoref 
 
     $ player_score -= 1
     $ lives -= 1
@@ -258,16 +259,16 @@ label quiz10:
     if lives <= 0:
         jump end_game
 
-    jump quiz10
+    jump gquiz10
 
 #player nagivation after the quiz
-label scoref:
+label gscoref:
     hide screen hearts
-    "your final score: [player_score]/10"
-    jump progress1
+    "your final score: [player_score]"
+    jump gprogress1
 
-label progress1:
+label gprogress1:
     if player_score >= 7:
-        jump secondvillainwin
+        jump gsecondvillainwin
     else:
-        jump secondvillainlose
+        jump gsecondvillainlose

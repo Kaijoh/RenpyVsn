@@ -4,7 +4,7 @@ define r = Character("Robin", color="#c00606")
 # define n = Character("Narrator", color="#460beb") 
 define w = Character("Wise Man", color="#03ee36") 
 
-# text
+# mytext
 define ct = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=75, what_outlines=[(5, "#000", 0, 0 )])
 define n = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=45, what_outlines=[(5, "#000", 0, 0 )])
  
@@ -23,59 +23,19 @@ image pic_10 = im.Scale("backgrounds/garden-rainy.jpg", 1920, 1080)
 image pic_11 = im.Scale("backgrounds/rainforest.png", 1920, 1080)
 image pic_12 = im.Scale("backgrounds/magical-cave.png", 1920, 1080)
 image pic_13 = im.Scale("backgrounds/ruins.jpg", 1920, 1080)
+image pic_14 = im.Scale("backgrounds/club-room.png", 1920, 1080)
+image pic_15 = im.Scale("backgrounds/classroom.png", 1920, 1080)
+
 
 image idle_1 = im.Scale("idle.jpg", 1920, 1080) 
 image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.ogv", loop=True) 
 
-#highlights 
-transform darken: 
-    matrixcolor TintMatrix("#ffffff") * SaturationMatrix(1.0) 
-    linear 0.5 matrixcolor TintMatrix("#4e4e4e") * SaturationMatrix(1.0) 
- 
-transform lighten: 
-    linear 0.5 matrixcolor TintMatrix("#ffffff") * SaturationMatrix(1.0) 
+image mytext = ParameterizedText(style="something")
 
-# transform xzoom -1:
- 
-image heart:
-    "heart.png"
-    zoom 5.80
-image background:
-    "background.png"
-    zoom 5.80
-image border:
-    "border.png"
-    zoom 5.80
-
-image book:
-    "book.png"
-    zoom 0.2
-image fullbook:
-    "fullbook.png"
-    zoom 0.1
-image addpage:
-    "addpage.png", addpage_bounce
-    zoom 0.1
-
-image arrow:
-    "arrow.png", arrow_bounce
-
-transform arrow_bounce:
-    xoffset  40
-    yoffset -40
-    block:
-        ease .25 xoffset 10 yoffset 10
-        ease .25 xoffset -40 yoffset 40
-        repeat
-
-transform addpage_bounce:
-    xoffset  40
-    yoffset -40
-    block:
-        ease .25 xoffset 10 yoffset 10
-        ease .25 xoffset -40 yoffset 40
-        repeat
-
+style something:
+    outlines [(3, "#000", 0, 0 )]
+    xalign 0.5
+    yalign 0.5
 
 # init:
 #     $ max_lives = 3
@@ -90,30 +50,73 @@ default pages = 0
 default max_lives = 3
 default lives = max_lives
 
+
+label splashscreen:
+    scene black 
+    with Pause(1)
+    show mytext "Kaijoh Channel Presents......" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "The Lost Pages" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    return
+    
+label splashscreen2:
+    show pic_4 with dissolve
+    with Pause(1)
+    show mytext "Learning a new language like English is a journey of self-discovery and personal growth."
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "So Start your journey now!"
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    jump gender
+
 # start of the game
 label start:
     # Display a message and show an alert box when a button is clicked
-    show pic_4 with dissolve
-    menu:
-        "First choose your avatar.":
-            jump gender
+    jump splashscreen2
     
 
 label gender: 
     menu: 
-        "Ok...": 
+        "Ok...":
+            show screen choosechar 
             call screen choose_route with dissolve
         "No thank you!": 
-            jump variable
+            jump pass
     return
  
-label variable: 
+label variable1: 
+    hide screen choosechar
     $ player_name = renpy.input("what would you like to name your character?") 
-    jump Act1
+    jump end_game
     return 
 
+label variable2: 
+    hide screen choosechar
+    $ player_name = renpy.input("what would you like to name your character?") 
+    jump gAct1
+    return 
 
-label end_game: 
+label end_game:
+    hide screen hearts
+    hide screen books
+    hide screen fullbooks
+    scene black 
     python: 
         import requests 
         import json 
@@ -159,24 +162,46 @@ label end_game:
  
 label submit: 
     "Your score: [player_score], has been submitted. Thank you for playing!" 
-    return 
+    scene
+    jump splashscreen3
  
 label notsubmit: 
     "goodluck"
     return 
  
- 
- 
-# error: 
-     
- 
-     
-# label start: 
-#     $ player_score = 10 
-#     $ player_name = renpy.input("what character name?") 
-#     jump end_game 
- 
-# label end_game: 
-#     python: 
-#         import requests 
-#
+label splashscreen3:
+    scene black
+    show boyblush at left with dissolve
+    show girlshy at right with dissolve
+    with Pause(1)
+    show mytext "Kaijoh Channel Presents......" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "Credits to:" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "ASSETS - ITCH.IO" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "Game Engine - Ren'Py" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    show mytext "THANK YOU FOR PLAYING! :)" with dissolve
+    with Pause(2)
+
+    hide mytext with dissolve
+    with Pause(1)
+
+    return
