@@ -123,7 +123,6 @@ label bpuzzle5:
     jump bpuzzle5
 
 label bscoref2:
-    hide screen hearts
     "your score: [player_score]"
     jump bprogress2
 
@@ -138,7 +137,7 @@ label bprogress2:
 label bpuzzle6:
     show screen hearts
     show screen question6
-    $ answer6 = renpy.input("enter your asnwer here!")
+    $ answer6 = renpy.input("enter the letter of the correct answer here.")
 
     if answer6.lower() in ["a"]:
         hide screen question6
@@ -163,7 +162,7 @@ label bpuzzle6:
 label bpuzzle7:
     show screen hearts
     show screen question7
-    $ answer7 = renpy.input("enter your asnwer here!")
+    $ answer7 = renpy.input("enter the letter of the correct answer here.")
 
     if answer7.lower() in ["b"]:
         hide screen question7
@@ -188,7 +187,7 @@ label bpuzzle7:
 label bpuzzle8:
     show screen hearts
     show screen question8
-    $ answer8 = renpy.input("enter your asnwer here!")
+    $ answer8 = renpy.input("enter the letter of the correct answer here.")
 
     if answer8.lower() in ["a"]:
         hide screen question8
@@ -213,7 +212,7 @@ label bpuzzle8:
 label bpuzzle9:
     show screen hearts
     show screen question9
-    $ answer9 = renpy.input("enter your asnwer here!")
+    $ answer9 = renpy.input("enter the letter of the correct answer here.")
 
     if answer9.lower() in ["a"]:
         hide screen question9
@@ -238,7 +237,7 @@ label bpuzzle9:
 label bpuzzle10:
     show screen hearts
     show screen question10
-    $ answer10 = renpy.input("enter your asnwer here!")
+    $ answer10 = renpy.input("enter the letter of the correct answer here.")
 
     if answer10.lower() in ["d"]:
         hide screen question10
@@ -261,7 +260,6 @@ label bpuzzle10:
     jump scoref3
 
 label bscoref3:
-    hide screen hearts
     "your final score: [player_score]"
     jump bprogress3
 

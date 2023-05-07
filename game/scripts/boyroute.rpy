@@ -154,11 +154,14 @@ label bAct3:
 
 label bAct3_2:
     #quiz
+    scene black
     n "the protagonist and robin continued their journey to the magical cave....."
     jump bsecondvillain
 
 label bAct3_3:
     #grammar puzzle
+    scene black
+    n "the protagonist and robin continued their journey to the ruins....."
     jump bthirdvillain
 
 label bAct3_4:
@@ -182,6 +185,8 @@ label bAct3_4:
     hide boynormal with moveouttop
 
     show teleport
+
+    "......"
 
     hide teleport
     # Add transition effect here, such as dissolve or fadeout.
@@ -229,7 +234,6 @@ label bAct5:
     show boynormal at right
     player_name "Thats great i will test my newfound knowledge on that day."
     
-    player_name "I'm in! This is the perfect chance to prove myself."
     hide boyconfident
     hide boynormal
 

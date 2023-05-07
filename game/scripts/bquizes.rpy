@@ -263,7 +263,6 @@ label bquiz10:
 
 #player nagivation after the quiz
 label bscoref:
-    hide screen hearts
     "your final score: [player_score]"
     jump bprogress1
 

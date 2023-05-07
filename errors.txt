@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 104: expected 'name' not found.
-    hide screen 
-                ^
+File "game/scripts/characters.rpy", line 14: expected 'comma or end of line' not found.
+    with dissolve
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat May  6 23:35:24 2023
+Sun May  7 22:31:39 2023

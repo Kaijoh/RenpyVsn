@@ -5,7 +5,7 @@ define r = Character("Robin", color="#c00606")
 define w = Character("Wise Man", color="#03ee36") 
 
 # mytext
-define ct = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=75, what_outlines=[(5, "#000", 0, 0 )])
+define ct = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=55, what_outlines=[(5, "#000", 0, 0 )])
 define n = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=45, what_outlines=[(5, "#000", 0, 0 )])
  
 # backgrounds 
@@ -103,7 +103,7 @@ label gender:
 label variable1: 
     hide screen choosechar
     $ player_name = renpy.input("what would you like to name your character?") 
-    jump end_game
+    jump bAct1
     return 
 
 label variable2: 

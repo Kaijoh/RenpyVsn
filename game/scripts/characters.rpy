@@ -2,19 +2,20 @@
 #choosescreen 
 image boychar:
     "boy.png" 
-    zoom 0.55 
+    zoom 0.60 
  
 image girlchar: 
     "girl.png" 
-    zoom 0.55 
+    zoom 0.50 
  
 image boychar2: 
     "boy2.png" 
-    zoom 0.55 
+    zoom 0.50 
+    
  
 image girlchar2: 
     "girl2.png" 
-    zoom 0.55 
+    zoom 0.60 
 
 
 #girl route

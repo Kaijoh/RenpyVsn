@@ -263,7 +263,6 @@ label gquiz10:
 
 #player nagivation after the quiz
 label gscoref:
-    hide screen hearts
     "your final score: [player_score]"
     jump gprogress1
 

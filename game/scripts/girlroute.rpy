@@ -154,10 +154,12 @@ label gAct3:
 
 label gAct3_2:
     #quiz
+    scene black
     n "the protagonist and robin continued their journey to the magical cave....."
     jump gsecondvillain
 
 label gAct3_3:
+    scene black
     #grammar puzzle
     jump gthirdvillain
 
@@ -184,6 +186,8 @@ label gAct3_4:
 
     show teleport
 
+    "......"
+    
     hide teleport
     # Add transition effect here, such as dissolve or fadeout.
 
@@ -231,7 +235,6 @@ label gAct5:
     show girlsmile at right
     player_name "Thats great i will test my newfound knowledge on that day."
     
-    player_name "I'm in! This is the perfect chance to prove myself."
     hide girlsurprised
     hide girlsmile
 

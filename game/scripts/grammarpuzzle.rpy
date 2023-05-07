@@ -138,7 +138,7 @@ label gprogress2:
 label gpuzzle6:
     show screen hearts
     show screen question6
-    $ answer6 = renpy.input("enter your asnwer here!")
+    $ answer6 = renpy.input("enter the letter of the correct answer here.")
 
     if answer6.lower() in ["a"]:
         hide screen question6
@@ -163,7 +163,7 @@ label gpuzzle6:
 label gpuzzle7:
     show screen hearts
     show screen question7
-    $ answer7 = renpy.input("enter your asnwer here!")
+    $ answer7 = renpy.input("enter the lette of the correct answer ")
 
     if answer7.lower() in ["b"]:
         hide screen question7
@@ -188,7 +188,7 @@ label gpuzzle7:
 label gpuzzle8:
     show screen hearts
     show screen question8
-    $ answer8 = renpy.input("enter your asnwer here!")
+    $ answer8 = renpy.input("enter the lette of the correct answer ")
 
     if answer8.lower() in ["a"]:
         hide screen question8
@@ -213,7 +213,7 @@ label gpuzzle8:
 label gpuzzle9:
     show screen hearts
     show screen question9
-    $ answer9 = renpy.input("enter your asnwer here!")
+    $ answer9 = renpy.input("enter the lette of the correct answer ")
 
     if answer9.lower() in ["a"]:
         hide screen question9
@@ -238,7 +238,7 @@ label gpuzzle9:
 label gpuzzle10:
     show screen hearts
     show screen question10
-    $ answer10 = renpy.input("enter your asnwer here!")
+    $ answer10 = renpy.input("enter the lette of the correct answer ")
 
     if answer10.lower() in ["d"]:
         hide screen question10
