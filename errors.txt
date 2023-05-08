@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters.rpy", line 14: expected 'comma or end of line' not found.
-    with dissolve
+File "game/recy/playground.rpy", line 86: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
+    add "#4b3b3b"
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun May  7 22:31:39 2023
+Mon May  8 23:55:22 2023

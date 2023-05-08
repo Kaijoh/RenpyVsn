@@ -1,0 +1,11 @@
+to do list:
+
+- randomize the question 
+- first act easy questions (atleast pick 5 random question from saved questions) 
+
+- set act by difficulty (easy, medium, hard) 
+- bonus round ( if player got the correct )
+- display the score in the screen
+- hint function ( include in bonus round if )
+- function reward system exchange
+

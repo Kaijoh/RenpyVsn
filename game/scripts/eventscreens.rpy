@@ -35,10 +35,11 @@ screen arrows():
 
 screen hearts():
     hbox:
-        xalign 0.99
+        xalign 0.01
         yalign 0.02
+        
         for i in range(max_lives):
-            fixed xysize(99, 99): 
+            fixed xysize(50, 50): 
                 add "background"
                 add "border"
                 if i < lives:

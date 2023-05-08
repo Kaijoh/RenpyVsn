@@ -37,13 +37,6 @@ style something:
     xalign 0.5
     yalign 0.5
 
-# init:
-#     $ max_lives = 3
-#     $ lives = max_lives
-
-#     $ max_pages = 3
-#     $ pages = 0
-
 default player_score = 0
 default max_pages = 3
 default pages = 0
@@ -69,7 +62,7 @@ label splashscreen:
     return
     
 label splashscreen2:
-    show pic_4 with dissolve
+    scene black
     with Pause(1)
     show mytext "Learning a new language like English is a journey of self-discovery and personal growth."
     with Pause(2)
@@ -92,6 +85,7 @@ label start:
     
 
 label gender: 
+    show pic_4 with dissolve
     menu: 
         "Ok...":
             show screen choosechar 
@@ -103,12 +97,18 @@ label gender:
 label variable1: 
     hide screen choosechar
     $ player_name = renpy.input("what would you like to name your character?") 
-    jump bAct1
+
+    scene black
+    n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
+    jump test
     return 
 
 label variable2: 
     hide screen choosechar
     $ player_name = renpy.input("what would you like to name your character?") 
+    
+    scene black
+    n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump gAct1
     return 
 
@@ -152,7 +152,7 @@ label end_game:
             # If the request was not successful, display an error message 
             print(f"Error submitting score: {response.status_code} {response.reason}") 
  
-    "Your score: [player_score]/100, would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
+    "Your score: [player_score], would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
  
     menu: 
         "Exite Game and submit score?": 

@@ -26,15 +26,30 @@ transform addpage_bounce:
 
 #images for the transforms
 
+image menubg:
+    "transparent.png"
+    
+
+image stat:
+    "stats_idle.png"
+    zoom 0.30
+
+image close:
+    "close_idle.png"
+    zoom 0.30
+
 image heart:
     "heart.png"
-    zoom 5.80
+    zoom 2.90
+    
 image background:
     "background.png"
-    zoom 5.80
+    zoom 2.80
+    
 image border:
     "border.png"
-    zoom 5.80
+    zoom 2.80
+    
 
 image book:
     "book.png"
