@@ -37,9 +37,9 @@ style something:
     xalign 0.5
     yalign 0.5
 
-default player_score = 0
+default player_score = 3
 default max_pages = 3
-default pages = 0
+default pages = 3
 default max_lives = 3
 default lives = max_lives
 

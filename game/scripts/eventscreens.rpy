@@ -12,6 +12,18 @@ screen choosechar:
             margin (0,0,10,0)
             text "Choose your route."
 
+screen choosereward:
+    hbox:
+        xalign 0.5
+        yalign 0.01
+        frame:
+            background "#706969"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "Exchange Reward.\nYou can exchange your book page here for a permanent additional heart that will help you in your jouney "
+
 screen choose_route: 
     hbox: 
         xalign 0.5 

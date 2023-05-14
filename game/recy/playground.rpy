@@ -1,6 +1,7 @@
 label test:
     show pic_10
     show screen gameUI
+    show screen rewardbutton
     pause
 
 
@@ -35,38 +36,6 @@ screen gameUI():
         yoffset 30
         idle "stat"
         action ShowMenu("StatsUI")
-
-# screen StatsUI():
-#     add "pic_4"
-#     frame:
-#         xalign 0.5
-#         yalign 0.5
-#         ypadding 30
-#         xpadding 30
-#         hbox:
-
-#             spacing 40
-
-#             vbox:
-#                 spacing 10
-#                 text "Name:" size 40
-#                 text "Score" size 40
-#                 text "Lives" size 40
-#                 text "Pages" size 40
-            
-#             vbox:
-#                 spacing 10
-#                 text '[player_name]' size 40
-#                 text '[player_score]' size 40
-#                 text '[lives]' size 40
-#                 text '[pages]' size 40
-#     imagebutton:
-#         xalign 1.0
-#         yalign 0.0
-#         xoffset -30
-#         yoffset 30
-#         idle "close"
-#         action Return()
 
 screen StatsUI():
     hbox:
@@ -106,8 +75,89 @@ screen StatsUI():
         yoffset 30
         idle "close"
         action Return()
-            
-            
+    
+
+screen rewardbutton():
+    imagebutton:
+        xalign 0.88
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "stat2"
+        action ShowMenu("rewardshop")
+
+$ player_score = 0
+
+
+
+screen rewardshop():
+    vbox:
+        xalign 0.5
+        yalign 0.2
+        frame:
+            background "#706969"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "                   EXCHANGE REWARD.\n\nYou can exchange your book page here for a \npermanent additional heart that will help you\nin your jouney "
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        yoffset 30 
+        spacing 20 
+
+        imagebutton: 
+            idle "exchange2" 
+            hover "exchange" 
+            if pages >= 1:
+                action [SetVariable("pages", pages - 1), SetVariable("max_lives", max_lives + 1), SetVariable("lives", lives + 1), ToggleScreen("adisplay"), ToggleScreen("rewardshop"), ]
+            else:
+                action ToggleScreen("adisplay")
+                
+
+        # imagebutton: 
+        #     idle "exchange2" 
+        #     hover "exchange" 
+        #     if lives >= 1 and player_score >= 1:
+        #         action [SetVariable("player_score", player_score + 1), SetVariable("lives", lives - 1)]
+                  
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action Return()
+
+screen adisplay():
+    vbox:
+        add "addh"
+        xalign 0.5
+        yalign 0.7
+
+    imagebutton:
+        xalign 0.5
+        yalign 0.01
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action [ToggleScreen("adisplay"), ToggleScreen("rewardshop")]
+    
+screen adisplay2():
+    on show:
+        with hpunch(0.5):
+            pass
+
+    # imagebutton:
+    #     xalign 0.5
+    #     yalign 0.01
+    #     xoffset -30
+    #     yoffset 30
+    #     idle "close"
+    #     action [ToggleScreen("adisplay2"), ToggleScreen("rewardshop")]
+    
+
 
 #bonus screens
 

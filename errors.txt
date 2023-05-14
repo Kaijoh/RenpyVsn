@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/recy/playground.rpy", line 86: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
-    add "#4b3b3b"
-    ^
+File "game/recy/playground.rpy", line 148: 'show' is not a keyword argument or valid child for the on statement.
+    on show:
+           ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon May  8 23:55:22 2023
+Sun May 14 21:30:24 2023

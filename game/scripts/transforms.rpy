@@ -34,6 +34,18 @@ image stat:
     "stats_idle.png"
     zoom 0.30
 
+image stat2:
+    "stats2_idle.png"
+    zoom 0.30
+
+image exchange:
+    "rewardsx.png"
+    zoom 0.50
+
+image exchange2:
+    "rewardsx2.png"
+    zoom 0.50
+
 image close:
     "close_idle.png"
     zoom 0.30
@@ -63,3 +75,6 @@ image addpage:
 
 image arrow:
     "arrow.png", arrow_bounce
+
+image addh:
+    "addheart.png", addpage_bounce
