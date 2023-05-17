@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/recy/playground.rpy", line 148: 'show' is not a keyword argument or valid child for the on statement.
-    on show:
-           ^
+The label bquestion_003 is defined twice, at File "game/scripts/bquizes.rpy", line 92:
+label bquestion_003:
+and File "game/scripts/quizes.rpy", line 103:
+label bquestion_003:
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun May 14 21:30:24 2023
+Wed May 17 19:18:47 2023

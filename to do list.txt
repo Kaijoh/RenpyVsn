@@ -5,7 +5,6 @@ to do list:
 
 - set act by difficulty (easy, medium, hard) 
 - bonus round ( if player got the correct )
-- display the score in the screen
 - hint function ( include in bonus round if )
 - function reward system exchange
 

@@ -59,8 +59,8 @@ screen hearts():
                     
 screen books():
     hbox:
-        xalign 0.13
-        yalign 0.03
+        xalign 0.0
+        yalign 0.08
         for i in range(pages):
             fixed xysize(99, 99): 
                 add "book"

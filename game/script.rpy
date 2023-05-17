@@ -39,7 +39,7 @@ style something:
 
 default player_score = 3
 default max_pages = 3
-default pages = 3
+default pages = 0
 default max_lives = 3
 default lives = max_lives
 
@@ -91,8 +91,7 @@ label gender:
             show screen choosechar 
             call screen choose_route with dissolve
         "No thank you!": 
-            jump pass
-    return
+            return
  
 label variable1: 
     hide screen choosechar
@@ -100,8 +99,8 @@ label variable1:
 
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
-    jump test
-    return 
+    jump bAct3_2
+    
 
 label variable2: 
     hide screen choosechar
@@ -110,7 +109,7 @@ label variable2:
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump gAct1
-    return 
+    
 
 label end_game:
     hide screen hearts
@@ -151,7 +150,8 @@ label end_game:
         else: 
             # If the request was not successful, display an error message 
             print(f"Error submitting score: {response.status_code} {response.reason}") 
- 
+
+    ct "GAME OVER!......"
     "Your score: [player_score], would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
  
     menu: 
@@ -166,13 +166,16 @@ label submit:
     jump splashscreen3
  
 label notsubmit: 
-    "goodluck"
-    return 
+    "Your score: [player_score], goodluck!"
+
+    jump splashscreen3
  
 label splashscreen3:
+    scene
     scene black
     show boyblush at left with dissolve
     show girlshy at right with dissolve
+
     with Pause(1)
     show mytext "Kaijoh Channel Presents......" with dissolve
     with Pause(2)
@@ -205,3 +208,4 @@ label splashscreen3:
     with Pause(1)
 
     return
+    

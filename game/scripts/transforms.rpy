@@ -65,7 +65,7 @@ image border:
 
 image book:
     "book.png"
-    zoom 0.2
+    zoom 0.14
 image fullbook:
     "fullbook.png"
     zoom 0.1

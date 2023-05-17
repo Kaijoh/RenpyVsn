@@ -1,64 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/recy/playground.rpy", line 93, in prepare_screen
-    screen rewardshop():
-  File "game/recy/playground.rpy", line 93, in prepare
-    screen rewardshop():
-  File "game/recy/playground.rpy", line 104, in prepare
-    vbox:
-  File "game/recy/playground.rpy", line 104, in prepare
-    vbox:
-  File "game/recy/playground.rpy", line 110, in prepare
-    imagebutton:
-  File "game/recy/playground.rpy", line 110, in prepare
-    imagebutton:
-  File "game/recy/playground.rpy", line 113, in prepare
-    if pages >= 1:
-  File "game/recy/playground.rpy", line 113, in prepare
-    if pages >= 1:
-SyntaxError: invalid syntax (game/recy/playground.rpy, line 114)
+While running game code:
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 497, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'json' from 'G:\\renpy-8.0.3-sdk\\lib\\python3.9\\json\\__init__.pyc'>. (perhaps store.json = <module 'json' from 'G:\\renpy-8.0.3-sdk\\lib\\python3.9\\json\\__init__.pyc'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "G:\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "G:\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "G:\renpy-8.0.3-sdk\renpy\main.py", line 95, in run
-    renpy.display.screen.prepare_screens()
-  File "G:\renpy-8.0.3-sdk\renpy\display\screen.py", line 976, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/recy/playground.rpy", line 93, in prepare_screen
-    screen rewardshop():
-  File "game/recy/playground.rpy", line 93, in prepare
-    screen rewardshop():
-  File "game/recy/playground.rpy", line 104, in prepare
-    vbox:
-  File "game/recy/playground.rpy", line 104, in prepare
-    vbox:
-  File "game/recy/playground.rpy", line 110, in prepare
-    imagebutton:
-  File "game/recy/playground.rpy", line 110, in prepare
-    imagebutton:
-  File "game/recy/playground.rpy", line 113, in prepare
-    if pages >= 1:
-  File "game/recy/playground.rpy", line 113, in prepare
-    if pages >= 1:
-  File "G:\renpy-8.0.3-sdk\renpy\py3analysis.py", line 790, in ast_eval
-    return self.ast_eval_literal(expr)[0]
-  File "G:\renpy-8.0.3-sdk\renpy\py3analysis.py", line 772, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
-    raise e
-  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
-    raise orig_e
-  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/recy/playground.rpy, line 114)
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "G:\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 497, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "G:\renpy-8.0.3-sdk\renpy\loadsave.py", line 408, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "G:\renpy-8.0.3-sdk\renpy\loadsave.py", line 389, in save
+    dump((roots, renpy.game.log), logf)
+  File "G:\renpy-8.0.3-sdk\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+  File "G:\renpy-8.0.3-sdk\renpy\python.py", line 1158, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'json' from 'G:\\renpy-8.0.3-sdk\\lib\\python3.9\\json\\__init__.pyc'>. (perhaps store.json = <module 'json' from 'G:\\renpy-8.0.3-sdk\\lib\\python3.9\\json\\__init__.pyc'>)
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 striped_template 1.0
-Sun May 14 21:18:07 2023
+Wed May 17 19:18:36 2023
