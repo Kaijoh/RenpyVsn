@@ -153,13 +153,13 @@ label bAct3:
     jump bfirstvillain
 
 label bAct3_2:
-    #quiz
+    #grammar puzzle
     scene black
     n "the protagonist and robin continued their journey to the magical cave....."
     jump bsecondvillain
 
 label bAct3_3:
-    #grammar puzzle
+    #quiz
     scene black
     n "the protagonist and robin continued their journey to the ruins....."
     jump bthirdvillain

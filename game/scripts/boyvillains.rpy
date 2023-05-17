@@ -57,7 +57,7 @@ label bsecondvillain:
     "kakakakakakakakakakakakakakakakka"
     "now lets start"
     hide bluemad with dissolve
-    jump bquiz1
+    jump bpuzzle6
 
 label bsecondvillainwin:
     show bluesad at center with moveinbottom
@@ -80,7 +80,7 @@ label bsecondvillainlose:
     show bluemad at center with moveinbottom
     "HAHAHAHAHAHAHAHAHA YOU GOT BEATEN TO A PULP, GUESS YOU HAVE TO REDO MY CHALLENGE! :P"
     hide bluemad with dissolve
-    jump bquiz1
+    jump bpuzzle6
 
 #third monster
 label bthirdvillain:
@@ -93,7 +93,7 @@ label bthirdvillain:
     "kukukukukukukukukukukukukukukuku"
     "now lets start"
     hide redmad with dissolve
-    jump bpuzzle6
+    jump bquiz1
 
 label bthirdvillainwin:
     show redsad at center with moveinbottom
@@ -115,4 +115,4 @@ label bthirdvillainlose:
     show redmad at center with moveinbottom
     "HAHAHAHAHAHAHAHAHA YOU GOT BEATEN TO A PULP, GUESS YOU HAVE TO REDO MY CHALLENGE! :P"
     hide redmad with dissolve
-    jump bpuzzle6
+    jump bquiz1

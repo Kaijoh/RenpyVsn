@@ -77,6 +77,13 @@ screen addpages():
         yalign 0.5
         add "addpage"
 
+
+
+
+
+
+
+
 #puzzles
 screen question1():
     hbox:
@@ -88,7 +95,7 @@ screen question1():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nYou left _____ phone at home.\n\na. your\nb. you're"
+            text "Which word belongs in the blank space?\nYou left _____ phone at home.\n\na. your\nb. you're\nc. youre\nd. you'll"
 
 screen question2(): 
     hbox:
@@ -148,7 +155,7 @@ screen question6():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "1. What is the definition of \'apprehensive'?.\n\na. feeling nervous or worried\nb. having a lot of knowledge or experience\nc. behaving in a showy way to impress others\nd. causing disgust or horror"
+            text "Which word belongs in the blank space?\nHe __________ like ice cream.\n\na. don't\nb. doesn't\nc. isn't\nd. not"
 
 screen question7():
     hbox:
@@ -160,7 +167,7 @@ screen question7():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "2. What is the definition of 'conjecture'?.\n\na. a fact or piece of information that is known\nb. a conclusion based on incomplete evidence\nc. the feeling of being grateful for something\nd. a state of confusion or uncertainty"
+            text "Which word belongs in the blank space?\nShe _______ a cat.\n\na. have \nb. has \nc. is have\nd. not have"
 
 screen question8():
     hbox:
@@ -172,7 +179,7 @@ screen question8():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "3. What is the definition of 'diligent'?.\n\na. showing great attention to detail or effort\nb. unwilling to give up or compromise\nc. characterized by a lack of order or planning\nd. having a tendency to change one's mind frequently"
+            text "Which word belongs in the blank space?\nI _________ to the park yesterday.\n\na. goed \nb. went \nc. go \nd. was"
 
 screen question9():
     hbox:
@@ -184,9 +191,141 @@ screen question9():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "4. What is the definition of 'indignant'?.\n\na. feeling angry or annoyed about something unfair\nb. lacking energy or enthusiasm\nc. showing a lack of interest or concern\nd. having a tendency to avoid social situations"
+            text "Which word belongs in the blank space?\nThey _________ happy.\n\na. am \nb. is \nc. are \nd. be "
 
 screen question10():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "Which word belongs in the blank space?\nWe didn't _________ to the party.\n\na. didn't went \nb. didn't go \nc. don't go\nd. wasn't go"
+
+
+
+
+
+
+
+
+
+
+
+
+
+screen question11():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "1. What is the definition of \'apprehensive'?.\n\na. feeling nervous or worried\nb. having a lot of knowledge or experience\nc. behaving in a showy way to impress others\nd. causing disgust or horror"
+
+screen question12():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "2. What is the definition of 'conjecture'?.\n\na. a fact or piece of information that is known\nb. a conclusion based on incomplete evidence\nc. the feeling of being grateful for something\nd. a state of confusion or uncertainty"
+
+screen question13():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "3. What is the definition of 'diligent'?.\n\na. showing great attention to detail or effort\nb. unwilling to give up or compromise\nc. characterized by a lack of order or planning\nd. having a tendency to change one's mind frequently"
+
+screen question14():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "4. What is the definition of 'indignant'?.\n\na. feeling angry or annoyed about something unfair\nb. lacking energy or enthusiasm\nc. showing a lack of interest or concern\nd. having a tendency to avoid social situations"
+
+screen question15():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+
+screen question16():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+
+screen question17():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+
+screen question18():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+
+screen question19():
+    hbox:
+        xalign 0.5
+        yalign 0.4
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,100)
+            margin (0,0,10,0)
+            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+
+screen question20():
     hbox:
         xalign 0.5
         yalign 0.4

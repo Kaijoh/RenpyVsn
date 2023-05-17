@@ -12,6 +12,319 @@ label test:
     show screen gameUI
     show screen rewardbutton
     pause
+
+
+label gpquiz1():
+    show screen gameUI
+    show screen rewardbutton
+    show screen hearts
+    show screen books
+
+    call expression next_rnd_in_list( question_masterlist2)
+
+    if _return == "pass":
+        call expression next_rnd_in_list(question_masterlist2)
+
+        if _return == "pass":
+            call expression next_rnd_in_list(question_masterlist2)
+            
+            if _return == "pass":
+                call expression next_rnd_in_list(question_masterlist2)    
+            
+                if _return == "pass":
+                    n "nice you got it"
+                    jump bscoref2
+    
+    return
+
+label gpquestion_001:
+    show screen question1
+    $ answer1 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer1.lower() in ["your"]:
+        $ player_score += 1
+        hide screen question1
+        ct "Wonderful! guess you have a knacked on this thing. Now lets spice things up ;)"
+        return "pass"
+
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question1
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_001
+
+label gpquestion_002:
+    show screen question2
+    $ answer2 = renpy.input("Type the correct word here! (not letter of your choice .)")
+    
+    if answer2.lower() in ["after"]:
+        hide screen question2
+        ct "Awesome! you got it right!"
+        ct "Explanation: The sentence describes two events that happened one after the other. (After) is the correct word to use to connect the two events."
+        $ player_score += 1
+        return "pass"
+
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question2
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_002
+
+label gpquestion_003:
+    show screen question3
+
+    $ answer3 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer3.lower() in ["scolded"]:
+        hide screen question3
+        ct "Awesome! you got it right!"
+        ct "Explanation: (Scolded) means to reprimand or criticize someone for their behavior or actions. It is the most appropriate word to use in this context."
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question3
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_003
+
+label gpquestion_004:
+    show screen question4
+    $ answer4 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer4.lower() in ["sad"]:
+        hide screen question4
+        ct "Isane! Way to go [player_name]!"
+        ct "Explanation: (Sad) means feeling or showing sorrow; unhappy. It is the most appropriate word to use in this context."
+        $ player_score += 1
+        return "pass"
+
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question4
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. hehe ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_004
+
+label gpquestion_005:
+    show screen question5
+    $ answer5 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer5.lower() in ["disappointing"]:
+        hide screen question5
+        ct "Wonderful [player_name]!"
+        ct "Explanation: (Disappointing) means failing to meet expectations; not fulfilling hopes or desires. It is the most appropriate word to use in this context."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question5
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_005
+
+label gpquestion_006:
+    show screen question6
+    $ answer6 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer6.lower() in ["doesn't"]:
+        hide screen question6
+        ct "Wonderful [player_name]!"
+        ct "Explanation: In this sentence, the correct verb form to use with the pronoun he is doesn't, which is the contraction of does not."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question6
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_006
+
+label gpquestion_007:
+    show screen question7
+    $ answer7 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer7.lower() in ["has"]:
+        hide screen question7
+        ct "Wonderful [player_name]!"
+        ct "Explanation: When talking about the third person singular (she, he, it), we use the verb form has to indicate possession or presence."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question7
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_007
+
+label gpquestion_008:
+    show screen question8
+    $ answer8 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer8.lower() in ["went"]:
+        hide screen question8
+        ct "Wonderful [player_name]!"
+        ct "Explanation: The past tense of the verb go is went. Therefore, option B is the correct sentence in the past tense."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question8
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_008
+
+label gpquestion_009:
+    show screen question9
+    $ answer9 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer9.lower() in ["are"]:
+        hide screen question9
+        ct "Wonderful [player_name]!"
+        ct "Explanation: The pronoun they requires the verb form are to show the plural subject in the present tense."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question9
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_009
+
+label gpquestion_010:
+    show screen question10
+    $ answer10 = renpy.input("Type the correct word here! (not letter of your choice .)")
+
+    if answer10.lower() in ["didn't go"]:
+        hide screen question10
+        ct "Wonderful [player_name]!"
+        ct "Explanation: When negating a sentence in the past tense, we use the auxiliary verb did and the base form of the main verb, which is go in this case."
+        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+        $ player_score += 1
+        return "pass"
+    
+    $ player_score -= 1
+    $ lives -= 1
+
+    hide screen question10
+    show girlupset at right with moveinbottom
+    ct "You got it wrong. Please review it again or do some research. ..."
+    hide girlupset with dissolve
+
+    if lives <= 0:
+        jump end_game
+
+    jump gpquestion_010
+
+
+
+
+label gpquestion_011:
+
+label gpquestion_012:
+
+label gpquestion_013:
+
+label gpquestion_014:
+
+label gpquestion_015:
+
+label gpquestion_016:
+
+label gpquestion_017:
+
+label gpquestion_018:
+
+label gpquestion_019:
+
+label gpquestion_020:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # in this renpy line of codes im trying to randomize the question labels so that the player wont get the same question arrangement everytime he play the game and now i want to make it that the player gets to answer all the 3 question and then he answer all the 3 question correctly he jump to the next label
 
 #the code:

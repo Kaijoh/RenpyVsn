@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label bquestion_003 is defined twice, at File "game/scripts/bquizes.rpy", line 92:
-label bquestion_003:
-and File "game/scripts/quizes.rpy", line 103:
-label bquestion_003:
+The label gquiz1 is defined twice, at File "game/recy/playground.rpy", line 17:
+label gquiz1():
+and File "game/scripts/quizes.rpy", line 15:
+label gquiz1():
 
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed May 17 19:18:47 2023
+Wed May 17 21:42:52 2023

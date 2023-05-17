@@ -6,44 +6,46 @@ init python:
         return theList[0]
 
 
-    question_masterlist = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010", "bquestion_011", "bquestion_012", "bquestion_013", "bquestion_014", "bquestion_015", "bquestion_016", "bquestion_017", "bquestion_018", "bquestion_019", "bquestion_020",]
     question_masterlist = [ "question_001", "question_002", "question_003", "question_004", "question_005", "question_006", "question_007", "question_008", "question_009", "question_010", "question_011", "question_012", "question_013", "question_014", "question_015", "question_016", "question_017", "question_018", "question_019", "question_020",]
-
+    question_masterlist1 = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010", "bquestion_011", "bquestion_012", "bquestion_013", "bquestion_014", "bquestion_015", "bquestion_016", "bquestion_017", "bquestion_018", "bquestion_019", "bquestion_020",]
+    question_masterlist2 = [ "gpquestion_001", "gpquestion_002", "gpquestion_003", "gpquestion_004", "gpquestion_005", "gpquestion_006", "gpquestion_007", "gpquestion_008", "gpquestion_009", "gpquestion_010"]
+    # question_masterlist3 = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010"]
+    
 label gquiz1():
     show screen gameUI
     show screen rewardbutton
     show screen hearts
     show screen books
 
-    call expression next_rnd_in_list( question_masterlist )
+    call expression next_rnd_in_list( question_masterlist1)
 
     if _return == "pass":
-        call expression next_rnd_in_list(question_masterlist)
+        call expression next_rnd_in_list(question_masterlist1)
 
         if _return == "pass":
-            call expression next_rnd_in_list(question_masterlist)
+            call expression next_rnd_in_list(question_masterlist1)
             
             if _return == "pass":
-                call expression next_rnd_in_list(question_masterlist)
+                call expression next_rnd_in_list(question_masterlist1)
 
                 if _return == "pass":
-                    call expression next_rnd_in_list(question_masterlist)
+                    call expression next_rnd_in_list(question_masterlist1)
 
                     if _return == "pass":
-                        call expression next_rnd_in_list(question_masterlist)
+                        call expression next_rnd_in_list(question_masterlist1)
 
                         if _return == "pass":
-                            call expression next_rnd_in_list(question_masterlist)
+                            call expression next_rnd_in_list(question_masterlist1)
 
                             if _return == "pass":
-                                call expression next_rnd_in_list(question_masterlist)  
+                                call expression next_rnd_in_list(question_masterlist1)  
 
                                 if _return == "pass":
-                                    call expression next_rnd_in_list(question_masterlist)      
+                                    call expression next_rnd_in_list(question_masterlist1)      
             
                                     if _return == "pass":
                                         n "nice you got it"
-                                        jump bscoref
+                                        jump gscoref
     
     return
                 
