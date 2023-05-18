@@ -11,8 +11,8 @@ transform arrow_bounce:
     xoffset  40
     yoffset -40
     block:
-        ease .25 xoffset 10 yoffset 10
-        ease .25 xoffset -40 yoffset 40
+        ease .25 xoffset 40 yoffset 40
+        ease .25 xoffset -10 yoffset 10
         repeat
 
 transform addpage_bounce:
@@ -74,6 +74,7 @@ image addpage:
     zoom 0.1
 
 image arrow:
+    xzoom -0.99
     "arrow.png", arrow_bounce
 
 image addh:

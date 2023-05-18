@@ -9,6 +9,9 @@ init python:
     question_masterlist = [ "question_001", "question_002", "question_003", "question_004", "question_005", "question_006", "question_007", "question_008", "question_009", "question_010", "question_011", "question_012", "question_013", "question_014", "question_015", "question_016", "question_017", "question_018", "question_019", "question_020",]
     question_masterlist1 = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010", "bquestion_011", "bquestion_012", "bquestion_013", "bquestion_014", "bquestion_015", "bquestion_016", "bquestion_017", "bquestion_018", "bquestion_019", "bquestion_020",]
     question_masterlist2 = [ "gpquestion_001", "gpquestion_002", "gpquestion_003", "gpquestion_004", "gpquestion_005", "gpquestion_006", "gpquestion_007", "gpquestion_008", "gpquestion_009", "gpquestion_010"]
+    question_masterlist3 = [ "gpquestion_011", "gpquestion_012", "gpquestion_013", "gpquestion_014", "gpquestion_015", "gpquestion_016", "gpquestion_017", "gpquestion_018", "gpquestion_019", "gpquestion_020"]
+    question_masterlist4 = [ "bpquestion_001", "bpquestion_002", "bpquestion_003", "bpquestion_004", "bpquestion_005", "bpquestion_006", "bpquestion_007", "bpquestion_008", "bpquestion_009", "bpquestion_010"]
+    question_masterlist5 = [ "bpquestion_011", "bpquestion_012", "bpquestion_013", "bpquestion_014", "bpquestion_015", "bpquestion_016", "bpquestion_017", "bpquestion_018", "bpquestion_019", "bpquestion_020"]
     # question_masterlist3 = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010"]
     
 label gquiz1():
@@ -588,6 +591,6 @@ label gscoref:
 
 label gprogress1:
     if player_score >= 7:
-        jump gsecondvillainwin
+        jump gthirdvillainwin
     else:
-        jump gsecondvillainlose
+        jump gthirdvillainlose

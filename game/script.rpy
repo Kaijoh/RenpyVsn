@@ -99,7 +99,7 @@ label variable1:
 
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
-    jump gpquiz1
+    jump bAct3
     
 
 label variable2: 
@@ -110,6 +110,20 @@ label variable2:
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump gAct1
     
+# label end_game:
+#     hide screen hearts
+#     hide screen books
+#     hide screen fullbooks
+#     scene black 
+
+#     ct "GAME OVER!......"
+#     "Your score: [player_score], would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
+ 
+#     menu: 
+#         "Exite Game and submit score?": 
+#             jump submit 
+#         "Play Again?": 
+#             jump notsubmit 
 
 label end_game:
     hide screen hearts
@@ -120,17 +134,9 @@ label end_game:
         import requests 
         import json 
  
-        # Define the data to send to the server 
         data = {'player_name': player_name, 'player_score': str(player_score)} 
-        # data = {'player_name': player_name, 'player_score': player_score} 
+
         response = requests.post('http://localhost:8000/submit_score/', data=data) 
- 
-        # Define the headers to include in the request 
-        # headers = {'Content-type': 'application/json', 'Accept': 'application/json'} 
- 
-        # # Send a POST request to the server with the player's score data 
-        # response = requests.post('http://localhost:8000/submit_score/', data=json.dumps(data), headers=headers) 
-         
  
         # Check if the request was successful 
         if response.status_code == 200: 

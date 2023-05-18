@@ -14,15 +14,14 @@ label bfirstvillain:
     show screen hearts
     show screen arrows
     show screen books
-    show screen fullbooks
     window hide
-    ct "also before we start, see that 3 heart bar at the top right side?"
+    ct "also before we start, see that 3 heart bar at the top left side?"
     ct "that would count as your lives, everytime you choose the wrong answer you will lose 1 life."
     ct "so make sure you read and answer all the question correctly. thats all and GOODLUCK [player_name]!"
     hide screen arrows with dissolve
 
     
-    jump bpuzzle1
+    jump bpquiz1
 
 label bfirstvillainwin:
     show greensad at center with moveinbottom
@@ -43,7 +42,7 @@ label bfirstvillainlose:
     show greenmad at center with moveinbottom
     "HAHAHAHAHAHAHAHAHA YOU GOT BEATEN TO A PULP, GUESS YOU HAVE TO REDO MY CHALLENGE! :P"
     hide greenmad with dissolve
-    jump bpuzzle1
+    jump bpquiz1
 
 #second monster
 #quiz
@@ -57,7 +56,7 @@ label bsecondvillain:
     "kakakakakakakakakakakakakakakakka"
     "now lets start"
     hide bluemad with dissolve
-    jump bpuzzle6
+    jump bpquiz2
 
 label bsecondvillainwin:
     show bluesad at center with moveinbottom
@@ -80,7 +79,7 @@ label bsecondvillainlose:
     show bluemad at center with moveinbottom
     "HAHAHAHAHAHAHAHAHA YOU GOT BEATEN TO A PULP, GUESS YOU HAVE TO REDO MY CHALLENGE! :P"
     hide bluemad with dissolve
-    jump bpuzzle6
+    jump bpquiz2
 
 #third monster
 label bthirdvillain:

@@ -41,8 +41,8 @@ screen choose_route:
 
 screen arrows():
     hbox:
-        xalign 0.86
-        yalign 0.14
+        xalign 0.09
+        yalign 0.10
         add "arrow"
 
 screen hearts():
@@ -62,7 +62,7 @@ screen books():
         xalign 0.0
         yalign 0.08
         for i in range(pages):
-            fixed xysize(99, 99): 
+            fixed xysize(55, 55): 
                 add "book"
 
 screen fullbooks():
@@ -79,9 +79,116 @@ screen addpages():
 
 
 
+screen gameUI():
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "stat"
+        action ShowMenu("StatsUI")
 
+screen StatsUI():
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        frame:
+            add "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (750,370)
+            margin (0,0,0,0)
+            vbox:
+                xalign 0.25
+                yalign 0.3
+                spacing 10
+                text "PLAYER STATS" size 40
+                text "Name:" size 40
+                text "Score:" size 40
+                text "Lives:" size 40
+                text "Pages:" size 40
+            
+            vbox:
+                
+                xalign 0.85
+                yalign 0.3
+                spacing 10
+                text '       ' size 40
+                text '[player_name]' size 40
+                text '[player_score]' size 40
+                text '[lives]' size 40
+                text '[pages]' size 40
 
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action Return()
+    
+screen rewardbutton():
+    imagebutton:
+        xalign 0.88
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "stat2"
+        action ShowMenu("rewardshop")
 
+screen rewardshop():
+    vbox:
+        xalign 0.5
+        yalign 0.2
+        frame:
+            background "#706969"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "                   EXCHANGE REWARD.\n\nYou can exchange your book page here for a \npermanent additional heart that will help you\nin your jouney "
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        yoffset 30 
+        spacing 20 
+
+        imagebutton: 
+            idle "exchange2" 
+            hover "exchange" 
+            if pages >= 1:
+                action [SetVariable("pages", pages - 1), SetVariable("max_lives", max_lives + 1), SetVariable("lives", lives + 1), ToggleScreen("adisplay"), ToggleScreen("rewardshop"), ]
+            else:
+                action ToggleScreen("adisplay")
+                
+
+        # imagebutton: 
+        #     idle "exchange2" 
+        #     hover "exchange" 
+        #     if lives >= 1 and player_score >= 1:
+        #         action [SetVariable("player_score", player_score + 1), SetVariable("lives", lives - 1)]
+                  
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action Return()
+
+screen adisplay():
+    vbox:
+        add "addh"
+        xalign 0.5
+        yalign 0.7
+
+    imagebutton:
+        xalign 0.5
+        yalign 0.01
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action [ToggleScreen("adisplay"), ToggleScreen("rewardshop")]
 
 
 #puzzles
@@ -287,7 +394,7 @@ screen question16():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "Which word means 'extremely angry'?\n\na. Content \nb. Furious\nc. Pensive\nd. Elated"
 
 screen question17():
     hbox:
@@ -299,7 +406,7 @@ screen question17():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "Which word means 'to feel or express deep sorrow or regret'?\n\na. Commend\nb. Condemn\nc. Approve\nd. Praise"
 
 screen question18():
     hbox:
@@ -311,7 +418,7 @@ screen question18():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "Which word means 'to feel or express deep sorrow or regret'?\n\na. Celebrate\nb. Mourn\nc. Rejoice\nd. Delight"
 
 screen question19():
     hbox:
@@ -323,7 +430,7 @@ screen question19():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "Which word means 'to make a formal request for something'?\n\na. Inquire\nb. Demand\nc. Command\nd. Request"
 
 screen question20():
     hbox:
@@ -335,5 +442,5 @@ screen question20():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "Which word means 'to cause great fear or distress'?\n\na. Terrify\nb. Calm\nc. Soothe\nd. Comfort"
 

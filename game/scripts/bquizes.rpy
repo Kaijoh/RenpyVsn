@@ -575,6 +575,6 @@ label bscoref:
 
 label bprogress1:
     if player_score >= 1:
-        jump bsecondvillainwin
+        jump bthirdvillainwin
     else:
-        jump bsecondvillainlose
+        jump bthirdvillainlose
