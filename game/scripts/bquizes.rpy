@@ -28,11 +28,14 @@ label bquiz1():
                                 call expression next_rnd_in_list(question_masterlist)  
 
                                 if _return == "pass":
-                                    call expression next_rnd_in_list(question_masterlist)      
-            
+                                    call expression next_rnd_in_list(question_masterlist)    
+                                      
                                     if _return == "pass":
-                                        n "nice you got it"
-                                        jump bscoref
+                                        call expression next_rnd_in_list(question_masterlist)      
+                
+                                        if _return == "pass":
+                                            n "nice you got it"
+                                            jump bscoref
     
     return
                 

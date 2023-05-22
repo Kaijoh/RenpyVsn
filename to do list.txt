@@ -1,10 +1,10 @@
 to do list:
 
-- randomize the question 
-- first act easy questions (atleast pick 5 random question from saved questions) 
+- randomize the question - (done)
+- set act by difficulty (easy, medium, hard) - (done)
+- function reward system exchange - (done)
 
-- set act by difficulty (easy, medium, hard) 
-- bonus round ( if player got the correct )
-- hint function ( include in bonus round if )
-- function reward system exchange
 
+- question shuffle mehthod properly and wont encounter the same question twice
+- bonus round ( if player got all question correct ) (almost done)
+- hint function ( include in bonus round if ) (optional)

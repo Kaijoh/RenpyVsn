@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/eventscreens.rpy", line 76: fixed expects a non-empty block.
-    fixed xysize(50, 50): 
-                          ^
+File "game/recy/playground.rpy", line 128: 'return' is not a keyword argument or valid child for the imagebutton statement.
+    return "fail"
+          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu May 18 20:59:32 2023
+Mon May 22 16:41:55 2023

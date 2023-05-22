@@ -1,5 +1,260 @@
-# label test:
-#     show pic_10
+label test:
+    window hide
+    show screen bonus1
+
+    
+    pause
+
+# label bround:
+#     window hide
+
+#     show screen bonusimage
+
+#     pause 
+
+#     hide screen bonusimage
+
+#     pause 0.5
+
+#     call expression next_rnd_in_list(question_masterlist6) 
+            
+#     if _return == "pass":
+
+#         jump gfirstvillainwin
+    
+#     return
+
+
+# label bround1:
+#     window hide
+#     show screen bonus1
+    
+
+#     ct "Nice! You got a additional permanent heart that would aid you in your journey ^_^"
+
+#     hide screen bonus1
+    
+#     jump fail
+
+# label bround2:
+#     window hide
+
+#     show screen bonus2
+
+#     $ bonus2 = renpy.input("input your answer here!")
+
+#     if bonus2.lower() in ["animals"]:
+#         hide screen bonus2
+#         ct "Wonderful [player_name]!"
+#         ct "You got a additional permanent heart that would aid you in your journey ^_^"
+#         $ max_lives += 1
+#         $ lives += 1
+#         return "pass"
+
+    
+#     jump Fail
+
+# label bround3:
+#     window hide
+#     hide screen bonus2
+
+#     show screen bonus3
+
+#     $ bonus3 = renpy.input("input your answer here!")
+
+#     if bonus3.lower() in ["duck"]:
+#         hide screen bonus3
+#         ct "Wonderful [player_name]!"
+#         ct "You got a additional permanent heart that would aid you in your journey ^_^"
+#         $ max_lives += 1
+#         $ lives += 1
+#         return "pass"
+
+    
+#     jump Fail
+
+
+
+
+
+# label Fail:
+#     hide screen bonus1
+
+#     ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
+
+#     jump gscoref2
+
+#bonus screens
+screen bonusimage():
+    hbox:
+        xalign 0.5
+        yalign 0.3
+        add "broundp"
+
+
+screen bonus1():
+
+    hbox:
+        xalign 0.5
+        yalign 0.1
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "In the four pictures shown below, which one is the cat?"
+
+    hbox:
+        xalign 0.5
+        yalign 0.6
+        spacing 20
+        vbox:
+            xalign 0.2
+            yalign 0.6
+            yoffset 15 
+            spacing 10
+
+            imagebutton: 
+                
+                idle "duck" 
+                action Jump ("Fail") 
+                
+                    
+
+            imagebutton: 
+                idle "cat"
+                action [SetVariable("max_lives", max_lives + 1), SetVariable("lives", lives + 1), Jump("")]
+                
+                
+        vbox:
+            xalign 0.8
+            yalign 0.6
+            yoffset 15 
+            spacing 10
+            imagebutton: 
+                
+                idle "cheetah" 
+                action Jump ("Fail") 
+                
+            imagebutton: 
+                
+                idle "dog" 
+                action Jump ("Fail") 
+
+screen bonus2():
+
+    hbox:
+        xalign 0.5
+        yalign 0.1
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "guess the word in this scrumbled letters. Goodluck!"
+            
+
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        add "dm"
+
+screen bonus3():
+
+    hbox:
+        xalign 0.5
+        yalign 0.1
+        frame:
+            background "#4b3b3b"
+            xalign 0.5
+            yalign 0.5
+            padding (50,30)
+            margin (0,0,10,0)
+            text "   4 pic 1 word\nGuess the word!"
+
+    hbox:
+        xalign 0.5
+        yalign 0.45
+        spacing 20
+        vbox:
+            xalign 0.2
+            yalign 0.5
+            yoffset 15 
+            spacing 10
+
+            add "g1"
+            add "g2"
+        vbox:
+            xalign 0.8
+            yalign 0.5
+            yoffset 15 
+            spacing 10
+            add "g3"
+            add "g4"
+
+
+#bonus round 
+label bonus1:
+    show screen hearts
+    show screen question1
+    $ answer1 = renpy.input("Type your answer here!")
+
+    if answer1.lower() in ["cat"]:
+        $ max_lives +=1
+        $ lives += 1
+        hide screen question1
+        ct "Wonderful! guess you have a knacked on this thing. Now lets spice things up ;)"
+        jump bonus1
+
+    $ lives -= 1
+    hide screen question1
+    show girlupset at right with moveinbottom
+    ct "uhhhhh you miss the bonus round :'("
+    hide girlupset with dissolve
+
+    jump bonus1
+
+label bonus2:
+    show screen hearts
+    show screen question1
+    $ answer1 = renpy.input("Type your answer here!")
+
+    if answer1.lower() in ["cat"]:
+        $ max_lives +=1
+        $ lives += 1
+        hide screen question1
+        ct "Wonderful! guess you have a knacked on this thing. Now lets spice things up ;)"
+        jump bonus1
+
+    $ lives -= 1
+    hide screen question1
+    show girlupset at right with moveinbottom
+    ct "uhhhhh you miss the bonus round :'("
+    hide girlupset with dissolve
+
+    jump bonus2
+
+label bonus3:
+    show screen hearts
+    show screen question1
+    $ answer1 = renpy.input("Type your answer here!")
+
+    if answer1.lower() in ["cat"]:
+        $ max_lives +=1
+        $ lives += 1
+        hide screen question1
+        ct "Wonderful! guess you have a knacked on this thing. Now lets spice things up ;)"
+        jump bonus1
+
+    $ lives -= 1
+    hide screen question1
+    show girlupset at right with moveinbottom
+    ct "uhhhhh you miss the bonus round :'("
+    hide girlupset with dissolve
+
+    jump bonus3
 
 
 
@@ -8,10 +263,49 @@
 
 
 
-#     # final(put in boy route and girl route)
-#     show screen gameUI
-#     show screen rewardbutton
-#     pause
+
+# screen rewardshop():
+#     vbox:
+#         xalign 0.5
+#         yalign 0.2
+#         frame:
+#             background "#706969"
+#             xalign 0.5
+#             yalign 0.5
+#             padding (50,50)
+#             margin (0,0,10,0)
+#             text "                   EXCHANGE REWARD.\n\nYou can exchange your book page here for a \npermanent additional heart that will help you\nin your jouney "
+#     vbox:
+#         xalign 0.5
+#         yalign 0.5
+#         yoffset 30 
+#         spacing 20 
+
+#         imagebutton: 
+#             idle "exchange2" 
+#             hover "exchange" 
+#             if pages >= 1:
+#                 action [SetVariable("pages", pages - 1), SetVariable("max_lives", max_lives + 1), SetVariable("lives", lives + 1), ToggleScreen("adisplay"), ToggleScreen("rewardshop"), ]
+#             else:
+#                 action ToggleScreen("adisplay")
+                
+
+#         # imagebutton: 
+#         #     idle "exchange2" 
+#         #     hover "exchange" 
+#         #     if lives >= 1 and player_score >= 1:
+#         #         action [SetVariable("player_score", player_score + 1), SetVariable("lives", lives - 1)]
+
+
+
+
+
+
+
+
+
+
+
 
 
 # label gpquiz1():

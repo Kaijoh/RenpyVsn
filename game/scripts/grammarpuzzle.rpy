@@ -4,7 +4,7 @@ label gpquiz1():
     show screen hearts
     show screen books
 
-    call expression next_rnd_in_list( question_masterlist2)
+    call expression next_rnd_in_list(question_masterlist2)
 
     if _return == "pass":
         call expression next_rnd_in_list(question_masterlist2)
@@ -14,10 +14,13 @@ label gpquiz1():
             
             if _return == "pass":
                 call expression next_rnd_in_list(question_masterlist2)    
-            
+
                 if _return == "pass":
-                    n "nice you got it"
-                    jump gscoref2
+                    call expression next_rnd_in_list(question_masterlist2)    
+                
+                    if _return == "pass":
+                        n "nice you got it"
+                        jump gscoref2
     
     return
 
@@ -125,7 +128,7 @@ label gpquestion_005:
         hide screen question5
         ct "Wonderful [player_name]!"
         ct "Explanation: (Disappointing) means failing to meet expectations; not fulfilling hopes or desires. It is the most appropriate word to use in this context."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -150,7 +153,7 @@ label gpquestion_006:
         hide screen question6
         ct "Wonderful [player_name]!"
         ct "Explanation: In this sentence, the correct verb form to use with the pronoun he is doesn't, which is the contraction of does not."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -175,7 +178,7 @@ label gpquestion_007:
         hide screen question7
         ct "Wonderful [player_name]!"
         ct "Explanation: When talking about the third person singular (she, he, it), we use the verb form has to indicate possession or presence."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -200,7 +203,7 @@ label gpquestion_008:
         hide screen question8
         ct "Wonderful [player_name]!"
         ct "Explanation: The past tense of the verb go is went. Therefore, option B is the correct sentence in the past tense."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -225,7 +228,7 @@ label gpquestion_009:
         hide screen question9
         ct "Wonderful [player_name]!"
         ct "Explanation: The pronoun they requires the verb form are to show the plural subject in the present tense."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -250,7 +253,7 @@ label gpquestion_010:
         hide screen question10
         ct "Wonderful [player_name]!"
         ct "Explanation: When negating a sentence in the past tense, we use the auxiliary verb did and the base form of the main verb, which is go in this case."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -268,16 +271,17 @@ label gpquestion_010:
     jump gpquestion_010
 
 label gscoref2:
-    hide screen hearts
     "your score: [player_score]"
     jump gprogress2
 
 label gprogress2:
+    if player_score == 5:
+        jump gbround
+
     if player_score >= 5:
         jump gfirstvillainwin
-    else:
-        jump gfirstvillainlose
 
+    jump gfirstvillainlose
 
 #vocabulary
 label gpquiz2():
@@ -301,11 +305,14 @@ label gpquiz2():
                     call expression next_rnd_in_list(question_masterlist3)   
                      
                     if _return == "pass":
-                        call expression next_rnd_in_list(question_masterlist3)    
-                    
+                        call expression next_rnd_in_list(question_masterlist3)  
+
                         if _return == "pass":
-                            n "nice you got it"
-                            jump gscoref3
+                            call expression next_rnd_in_list(question_masterlist3)    
+                        
+                            if _return == "pass":
+                                n "nice you got it"
+                                jump gscoref3
     
     return
 
@@ -551,12 +558,107 @@ label gpquestion_020:
     jump gpquestion_020
 
 label gscoref3:
-    hide screen hearts
     "your final score: [player_score]"
     jump gprogress3
 
 label gprogress3:
-    if player_score >= 5:
+    if player_score == 12:
+        jump gbroundd
+
+    if player_score >= 12:
         jump gsecondvillainwin
-    else:
+
+    jump gsecondvillainlose
+
+label gbround:
+    window hide
+
+    show screen bonusimage
+
+    pause 
+
+    hide screen bonusimage
+
+    pause 0.5
+
+    call expression next_rnd_in_list(question_masterlist6) 
+            
+    if _return == "pass":
+
+        jump gfirstvillainwin
+
+    elif _return == "fail":
+        ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
+
+        jump gfirstvillainlose
+    
+    return
+
+label gbroundd:
+    window hide
+
+    show screen bonusimage
+
+    pause 
+
+    hide screen bonusimage
+
+    pause 0.5
+
+    call expression next_rnd_in_list(question_masterlist6) 
+            
+    if _return == "pass":
+
+        jump gsecondvillainwin
+
+    elif _return == "fail":
+        ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
+
         jump gsecondvillainlose
+    
+    return
+
+# label bround1:
+#     window hide
+#     show screen bonus1
+    
+#     pause
+
+#     hide screen bonus1
+    
+#     return "fail"
+
+label bround2:
+    window hide
+
+    show screen bonus2
+
+    $ bonus2 = renpy.input("input your answer here!")
+
+    if bonus2.lower() in ["animals"]:
+        hide screen bonus2
+        ct "Wonderful [player_name]!"
+        ct "You got a additional permanent heart that would aid you in your journey ^_^"
+        $ max_lives += 1
+        $ lives += 1
+        return "pass"
+
+    
+    return "fail"
+
+label bround3:
+    window hide
+
+    show screen bonus3
+
+    $ bonus3 = renpy.input("input your answer here!")
+
+    if bonus3.lower() in ["duck"]:
+        hide screen bonus3
+        ct "Wonderful [player_name]!"
+        ct "You got a additional permanent heart that would aid you in your journey ^_^"
+        $ max_lives += 1
+        $ lives += 1
+        return "pass"
+    
+    return "fail"

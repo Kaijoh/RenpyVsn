@@ -12,6 +12,7 @@ init python:
     question_masterlist3 = [ "gpquestion_011", "gpquestion_012", "gpquestion_013", "gpquestion_014", "gpquestion_015", "gpquestion_016", "gpquestion_017", "gpquestion_018", "gpquestion_019", "gpquestion_020"]
     question_masterlist4 = [ "bpquestion_001", "bpquestion_002", "bpquestion_003", "bpquestion_004", "bpquestion_005", "bpquestion_006", "bpquestion_007", "bpquestion_008", "bpquestion_009", "bpquestion_010"]
     question_masterlist5 = [ "bpquestion_011", "bpquestion_012", "bpquestion_013", "bpquestion_014", "bpquestion_015", "bpquestion_016", "bpquestion_017", "bpquestion_018", "bpquestion_019", "bpquestion_020"]
+    question_masterlist6 = [ "bround2", "bround3"]
     # question_masterlist3 = [ "bquestion_001", "bquestion_002", "bquestion_003", "bquestion_004", "bquestion_005", "bquestion_006", "bquestion_007", "bquestion_008", "bquestion_009", "bquestion_010"]
     
 label gquiz1():
@@ -44,11 +45,14 @@ label gquiz1():
                                 call expression next_rnd_in_list(question_masterlist1)  
 
                                 if _return == "pass":
-                                    call expression next_rnd_in_list(question_masterlist1)      
-            
+                                    call expression next_rnd_in_list(question_masterlist1)   
+                                       
                                     if _return == "pass":
-                                        n "nice you got it"
-                                        jump gscoref
+                                        call expression next_rnd_in_list(question_masterlist1)      
+                
+                                        if _return == "pass":
+                                            n "nice you got it"
+                                            jump gscoref
     
     return
                 

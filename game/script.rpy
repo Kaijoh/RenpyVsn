@@ -37,7 +37,7 @@ style something:
     xalign 0.5
     yalign 0.5
 
-default player_score = 3
+default player_score = 0
 default max_pages = 3
 default pages = 0
 default max_lives = 3
@@ -99,7 +99,7 @@ label variable1:
 
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
-    jump bAct3
+    jump bAct1
     
 
 label variable2: 

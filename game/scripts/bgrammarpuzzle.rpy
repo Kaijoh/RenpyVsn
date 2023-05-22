@@ -13,11 +13,14 @@ label bpquiz1():
             call expression next_rnd_in_list(question_masterlist4)
             
             if _return == "pass":
-                call expression next_rnd_in_list(question_masterlist4)    
-            
+                call expression next_rnd_in_list(question_masterlist4)   
+
                 if _return == "pass":
-                    n "nice you got it"
-                    jump bscoref2
+                    call expression next_rnd_in_list(question_masterlist4)    
+                
+                    if _return == "pass":
+                        n "nice you got it"
+                        jump bscoref2
     
     return
 
@@ -125,7 +128,7 @@ label bpquestion_005:
         hide screen question5
         ct "Wonderful [player_name]!"
         ct "Explanation: (Disappointing) means failing to meet expectations; not fulfilling hopes or desires. It is the most appropriate word to use in this context."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -150,7 +153,7 @@ label bpquestion_006:
         hide screen question6
         ct "Wonderful [player_name]!"
         ct "Explanation: In this sentence, the correct verb form to use with the pronoun he is doesn't, which is the contraction of does not."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -175,7 +178,7 @@ label bpquestion_007:
         hide screen question7
         ct "Wonderful [player_name]!"
         ct "Explanation: When talking about the third person singular (she, he, it), we use the verb form has to indicate possession or presence."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -200,7 +203,7 @@ label bpquestion_008:
         hide screen question8
         ct "Wonderful [player_name]!"
         ct "Explanation: The past tense of the verb go is went. Therefore, option B is the correct sentence in the past tense."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -225,7 +228,7 @@ label bpquestion_009:
         hide screen question9
         ct "Wonderful [player_name]!"
         ct "Explanation: The pronoun they requires the verb form are to show the plural subject in the present tense."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -250,7 +253,7 @@ label bpquestion_010:
         hide screen question10
         ct "Wonderful [player_name]!"
         ct "Explanation: When negating a sentence in the past tense, we use the auxiliary verb did and the base form of the main verb, which is go in this case."
-        r "wow [player_name], you're so great! now lets move to the next location of the other books page." 
+         
         $ player_score += 1
         return "pass"
     
@@ -272,10 +275,14 @@ label bscoref2:
     jump bprogress2
 
 label bprogress2:
+    if player_score == 5:
+        jump bbround
+
     if player_score >= 5:
         jump bfirstvillainwin
-    else:
-        jump bfirstvillainlose
+
+    jump bfirstvillainlose
+
 
 
 #vocabulary
@@ -301,13 +308,15 @@ label bpquiz2():
                      
                     if _return == "pass":
                         call expression next_rnd_in_list(question_masterlist5)    
-                    
+
                         if _return == "pass":
-                            n "nice you got it"
-                            jump bscoref3
+                            call expression next_rnd_in_list(question_masterlist5)    
+                        
+                            if _return == "pass":
+                                n "nice you got it"
+                                jump bscoref3
     
     return
-
 
 label bpquestion_011:
     show screen question11
@@ -554,7 +563,59 @@ label bscoref3:
     jump bprogress3
 
 label bprogress3:
-    if player_score >= 5:
+    if player_score == 12:
+        jump bbroundd
+
+    if player_score >= 12:
         jump bsecondvillainwin
-    else:
+
+    jump bsecondvillainlose
+
+
+label bbround:
+    window hide
+
+    show screen bonusimage
+
+    pause 
+
+    hide screen bonusimage
+
+    pause 0.5
+
+    call expression next_rnd_in_list(question_masterlist6) 
+            
+    if _return == "pass":
+
+        jump bfirstvillainwin
+
+    elif _return == "fail":
+        ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
+
+        jump bfirstvillainlose
+    
+    return
+
+label bbroundd:
+    window hide
+
+    show screen bonusimage
+
+    pause 
+
+    hide screen bonusimage
+
+    pause 0.5
+
+    call expression next_rnd_in_list(question_masterlist6) 
+            
+    if _return == "pass":
+
+        jump bsecondvillainwin
+
+    elif _return == "fail":
+        ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
+
         jump bsecondvillainlose
+    
+    return
