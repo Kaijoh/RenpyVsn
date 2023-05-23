@@ -43,7 +43,7 @@ label gpquestion_001:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_001
 
@@ -67,7 +67,7 @@ label gpquestion_002:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_002
 
@@ -92,7 +92,7 @@ label gpquestion_003:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_003
 
@@ -102,7 +102,7 @@ label gpquestion_004:
 
     if answer4.lower() in ["sad"]:
         hide screen question4
-        ct "Isane! Way to go [player_name]!"
+        ct "Insane! Way to go [player_name]!"
         ct "Explanation: (Sad) means feeling or showing sorrow; unhappy. It is the most appropriate word to use in this context."
         $ player_score += 1
         return "pass"
@@ -116,7 +116,7 @@ label gpquestion_004:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_004
 
@@ -141,7 +141,7 @@ label gpquestion_005:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_005
 
@@ -166,7 +166,7 @@ label gpquestion_006:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_006
 
@@ -191,7 +191,7 @@ label gpquestion_007:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_007
 
@@ -216,7 +216,7 @@ label gpquestion_008:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_008
 
@@ -241,7 +241,7 @@ label gpquestion_009:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_009
 
@@ -266,7 +266,7 @@ label gpquestion_010:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_010
 
@@ -337,7 +337,7 @@ label gpquestion_011:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_011
 
@@ -361,7 +361,7 @@ label gpquestion_012:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_012
 
@@ -385,7 +385,7 @@ label gpquestion_013:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_013
 
@@ -409,7 +409,7 @@ label gpquestion_014:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_014
 
@@ -433,7 +433,7 @@ label gpquestion_015:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_015
 
@@ -457,7 +457,7 @@ label gpquestion_016:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_016
 
@@ -481,7 +481,7 @@ label gpquestion_017:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_017
 
@@ -505,7 +505,7 @@ label gpquestion_018:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_018
 
@@ -529,7 +529,7 @@ label gpquestion_019:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_019
 
@@ -553,7 +553,7 @@ label gpquestion_020:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump gpquestion_020
 

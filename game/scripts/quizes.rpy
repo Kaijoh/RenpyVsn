@@ -79,7 +79,7 @@ label question_001:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump question_001
 
@@ -105,7 +105,7 @@ label question_002:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump question_002
 
@@ -131,7 +131,7 @@ label question_003:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_003
 
@@ -157,7 +157,7 @@ label question_004:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_004
 
@@ -183,7 +183,7 @@ label question_005:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_005
 
@@ -209,7 +209,7 @@ label question_006:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_006
 
@@ -235,7 +235,7 @@ label question_007:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_007
 
@@ -261,7 +261,7 @@ label question_008:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_008
 
@@ -287,7 +287,7 @@ label question_009:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_009
 
@@ -314,7 +314,7 @@ label question_010:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_010
 
@@ -341,7 +341,7 @@ label question_011:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_011
 
@@ -368,7 +368,7 @@ label question_012:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_012
 
@@ -395,7 +395,7 @@ label question_013:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_013
 
@@ -422,7 +422,7 @@ label question_014:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_014
 
@@ -449,7 +449,7 @@ label question_015:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_015
 
@@ -476,7 +476,7 @@ label question_016:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_016
 
@@ -503,7 +503,7 @@ label question_017:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_017
 
@@ -530,7 +530,7 @@ label question_018:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_018
 
@@ -557,7 +557,7 @@ label question_019:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_019
 
@@ -584,7 +584,7 @@ label question_020:
     hide girlupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump question_020
 

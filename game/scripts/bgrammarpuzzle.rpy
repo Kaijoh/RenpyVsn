@@ -44,7 +44,7 @@ label bpquestion_001:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_001
 
@@ -68,7 +68,7 @@ label bpquestion_002:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_002
 
@@ -93,7 +93,7 @@ label bpquestion_003:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_003
 
@@ -103,7 +103,7 @@ label bpquestion_004:
 
     if answer4.lower() in ["sad"]:
         hide screen question4
-        ct "Isane! Way to go [player_name]!"
+        ct "Insane! Way to go [player_name]!"
         ct "Explanation: (Sad) means feeling or showing sorrow; unhappy. It is the most appropriate word to use in this context."
         $ player_score += 1
         return "pass"
@@ -117,7 +117,7 @@ label bpquestion_004:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_004
 
@@ -142,7 +142,7 @@ label bpquestion_005:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_005
 
@@ -167,7 +167,7 @@ label bpquestion_006:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_006
 
@@ -192,7 +192,7 @@ label bpquestion_007:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_007
 
@@ -217,7 +217,7 @@ label bpquestion_008:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_008
 
@@ -242,7 +242,7 @@ label bpquestion_009:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_009
 
@@ -267,7 +267,7 @@ label bpquestion_010:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_010
 
@@ -339,7 +339,7 @@ label bpquestion_011:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_011
 
@@ -363,7 +363,7 @@ label bpquestion_012:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_012
 
@@ -387,7 +387,7 @@ label bpquestion_013:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_013
 
@@ -411,7 +411,7 @@ label bpquestion_014:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_014
 
@@ -435,7 +435,7 @@ label bpquestion_015:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_015
 
@@ -459,7 +459,7 @@ label bpquestion_016:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_016
 
@@ -483,7 +483,7 @@ label bpquestion_017:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_017
 
@@ -507,7 +507,7 @@ label bpquestion_018:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_018
 
@@ -531,7 +531,7 @@ label bpquestion_019:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_019
 
@@ -555,7 +555,7 @@ label bpquestion_020:
     hide boyworried with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bpquestion_020
 

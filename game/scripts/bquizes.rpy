@@ -62,7 +62,7 @@ label bquestion_001:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bquestion_001
 
@@ -88,7 +88,7 @@ label bquestion_002:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
 
     jump bquestion_002
 
@@ -114,7 +114,7 @@ label bquestion_003:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_003
 
@@ -140,7 +140,7 @@ label bquestion_004:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_004
 
@@ -166,7 +166,7 @@ label bquestion_005:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_005
 
@@ -192,7 +192,7 @@ label bquestion_006:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_006
 
@@ -218,7 +218,7 @@ label bquestion_007:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_007
 
@@ -244,7 +244,7 @@ label bquestion_008:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_008
 
@@ -270,7 +270,7 @@ label bquestion_009:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_009
 
@@ -297,7 +297,7 @@ label bquestion_010:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_010
 
@@ -324,7 +324,7 @@ label bquestion_011:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_011
 
@@ -351,7 +351,7 @@ label bquestion_012:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_012
 
@@ -378,7 +378,7 @@ label bquestion_013:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_013
 
@@ -405,7 +405,7 @@ label bquestion_014:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_014
 
@@ -432,7 +432,7 @@ label bquestion_015:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_015
 
@@ -459,7 +459,7 @@ label bquestion_016:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_016
 
@@ -486,7 +486,7 @@ label bquestion_017:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_017
 
@@ -513,7 +513,7 @@ label bquestion_018:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_018
 
@@ -540,7 +540,7 @@ label bquestion_019:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_019
 
@@ -567,7 +567,7 @@ label bquestion_020:
     hide boyupset with dissolve
 
     if lives <= 0:
-        jump end_game
+        jump end_game2
     
     jump bquestion_020
 

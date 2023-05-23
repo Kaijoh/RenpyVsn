@@ -22,7 +22,7 @@ label gAct1:
 
         "don't open the book and return it":
             "Your final score [player_score]"
-            jump end_game
+            jump end_game2
 
     player_name "'The Lost Pages'? It looks pretty old...and it's missing some pages too."
     
@@ -64,7 +64,7 @@ label gAct1:
         "Let's find the missing pages!":
             jump gAct2
         "I'm too scared. Can't we just leave?":
-            jump end_game
+            jump end_game2
 
     hide pic_8
 
@@ -118,7 +118,7 @@ label gAct2:
 
         "I'm too scared. Let's turn back.":
             "Your final score [player_score]"
-            jump end_game
+            jump end_game2
     
 label gAct3:
     scene black

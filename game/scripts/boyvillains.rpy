@@ -4,20 +4,20 @@
 label bfirstvillain:
     show greenmad at center with hpunch
     "OY OY OY! Look who is this."
-    "A new kid? a kid from another world perhaps?"
-    "I am Mr.Green the Slime."
-    "Don't laugh at me kid! well anyways,,,, you are in my territory kid. now before you get a pass here you must play with me first."
-    "kekekekekekekekekekekeke"
-    "now lets start"
+    "A new kid? a kid from another world, perhaps?"
+    "I am Mr.Green, the Slime."
+    "Don't laugh at me kid! well anyways,,,, you are in my territory kid. Now before you get a pass here you must play with me first."
+    "kekekekekekekekekekekeke."
+    "Now lets start!"
     hide greenmad with dissolve
 
     show screen hearts
     show screen arrows
     show screen books
     window hide
-    ct "also before we start, see that 3 heart bar at the top left side?"
-    ct "that would count as your lives, everytime you choose the wrong answer you will lose 1 life."
-    ct "so make sure you read and answer all the question correctly. thats all and GOODLUCK [player_name]!"
+    ct "Also before we start, see that 3 heart bar at the top left side?"
+    ct "That would count as your lives, everytime you choose the wrong answer you will lose 1 life."
+    ct "So make sure you read and answer all the question correctly. That's all and GOODLUCK [player_name]!"
     hide screen arrows with dissolve
 
     show blacks with dissolve 
@@ -29,13 +29,13 @@ label bfirstvillain:
     hide blacks 
     show board with dissolve
 
-    n "Now lets go through what grammar really is."
+    n "Now let's go through what grammar really is."
     
     ct "What is grammar?"
     
-    n "grammar, rules of a language governing the sounds, words, sentences, and other elements, as well as their combination and interpretation. The word grammar also denotes the study of these abstract features or a book presenting these rules."
+    n "Grammar, rules of a language governing the sounds, words, sentences, and other elements, as well as their combination and interpretation. The word grammar also denotes the study of these abstract features or a book presenting these rules."
     
-    ct "what is its purpose?"
+    ct "What is its purpose?"
     
     n "Grammar explains the forms and structure of words (called morphology) and how they are arranged in sentences (called syntax). In other words, grammar provides the rules for common use of both spoken and written language so we can more easily understand each other."
     
@@ -53,9 +53,9 @@ label bfirstvillain:
 label bfirstvillainwin:
     show greensad at center with moveinbottom
     "Ughhhh.. You have beaten me in my own challenge :(. My brothers will avenge me!!!"
-    "And if you want to get the next page, you must go to the magical cave"
-    "where my brother resides and he's keeping an eye on that page. so you better watch out."
-    "aight see you kid."
+    "And if you want to get the next page, you must go to the magical cave."
+    "That's where my brother resides and he's keeping an eye on that page. So you better watch out."
+    "aight, see you kid."
     hide greensad with dissolve
 
     window hide
@@ -80,11 +80,11 @@ label bsecondvillain:
     show pic_12 with dissolve
     show bluemad at center with hpunch
     "OY OY OY! Look who is this."
-    "the kid who beat my little brother haaaaa."
-    "I am Mr.Blue the Slime."
-    "Don't laugh at me kid! well anyways,,,, you are in my territory kid. now before you get the next page you must play with me first."
+    "The kid who beat my little brother."
+    "I am Mr.Blue, the slime."
+    "Don't laugh at me kid! well anyways, you are in my territory kid. Now before you get the next page you must play with me first."
     "kakakakakakakakakakakakakakakakka"
-    "now lets start"
+    "Now lets start"
     hide bluemad with dissolve
 
     window hide
@@ -98,7 +98,7 @@ label bsecondvillain:
     hide blacks 
     show board with dissolve
 
-    n "Now lets go through what vocabulary really is."
+    n "Now let's go through what vocabulary really is."
     
     ct "What is vocabulary?"
     
@@ -117,9 +117,9 @@ label bsecondvillain:
 
 label bsecondvillainwin:
     show bluesad at center with moveinbottom
-    "Ughhhh.. You have beaten me in my own challenge :(. My brothers will avenge me!!!"
-    "But im not that bad so i will tell you the next page location"
-    "It's in the Ruins where my third brother reside. so goodluck kid!"
+    "Ughhhh... You have beaten me in my own challenge :(. My big brother will avenge me!!!"
+    "But I'm not that bad, so I will tell you the next page location."
+    "It's in the ruins where my third brother resides. So good luck, kid!"
     hide bluesad with dissolve
 
     window hide
@@ -142,12 +142,12 @@ label bsecondvillainlose:
 label bthirdvillain:
     show pic_13 with dissolve
     show redmad at center with hpunch
-    "OY OY OY! Look who is this."
+    "OY OY OY! Now look who is this."
     "the one who beated my brothers"
-    "I am Mr.Red the Slime."
-    "Don't laugh at me kid! well anyways,,,, you are in my territory kid. now before you get the last pages and past here you must play with me first."
+    "I am Mr.Red, the slime."
+    "Don't laugh at me kid! well anyways,,,, you are in my territory kid. Now, before you get the last pages and past here you must play with me first."
     "kukukukukukukukukukukukukukukuku"
-    "now lets start"
+    "Now let's start"
     hide redmad with dissolve
 
     window hide
@@ -163,14 +163,14 @@ label bthirdvillain:
 
     n "Now it's time to spice things up."
     
-    ct "From this point onwards try to apply the knowledge you gain in the last levels and figure out the rest"
+    ct "From this point on, try to apply the knowledge you gained in the last few levels and figure out the rest."
 
     ct "LETS START! GOODLUCK!"
     jump bquiz1
 
 label bthirdvillainwin:
     show redsad at center with moveinbottom
-    "Ughhhh.. You have beaten me in my own challenge... :()"
+    "Ughhhh.. You have also beaten me in my own challenge... :()"
     hide redsad with dissolve
 
     window hide

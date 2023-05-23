@@ -26,7 +26,7 @@ image blacks = im.Scale("blacks.png", 1920, 1080)
 
 
 image idle_1 = im.Scale("idle.jpg", 1920, 1080) 
-image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.avi", loop=True) 
+image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.ogv", loop=True) 
 
 image mytext = ParameterizedText(style="something")
 

@@ -10,7 +10,7 @@ screen choosechar:
             yalign 0.5
             padding (50,50)
             margin (0,0,10,0)
-            text "Choose your route."
+            text "Choose your character."
 
 # screen choosereward:
 #     hbox:
@@ -211,7 +211,7 @@ screen question2():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\n_____ dinner last night, I watched a movie with my family.\n\na. After\nb. Before\nc. During\nd. On"
+            text "Which word belongs in the blank space?\n_____ dinner last night, I watched a movie with my family.\n\na. After\nb. when\nc. our\nd. On"
 
 screen question3():
     hbox:
@@ -223,7 +223,7 @@ screen question3():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nThe teacher ____________ the students for not studying for the test.\n\na. Praised\nb. Scolded\nc. Encouraged\nd. Congratulated"
+            text "Which word belongs in the blank space?\nThe teacher ____________ the students for not studying for the test.\n\na. Praisess\nb. Scolded\nc. Encourager\nd. Congratulated"
 
 screen question4():
     hbox:
@@ -235,7 +235,7 @@ screen question4():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nShe was ____________ when she heard the news.\n\na. Happy\nb. Sad\nc. Excited\nd. Angry"
+            text "Which word belongs in the blank space?\nShe was ____________ when she heard the news.\n\na. Happiness\nb. Sad\nc. Worry\nd. Laugh"
 
 screen question5():
     hbox:
@@ -247,7 +247,7 @@ screen question5():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nThe team's performance was ____________ in the championship game.\n\na. Incredible\nb. Disappointing\nc. Excellent\nd. Outstanding"
+            text "Which word belongs in the blank space?\nThe team lost and their performance was ____________ in the championship game.\n\na. Incredibles\nb. Disappointing\nc.Insanely \nd. Outstanding"
 
 screen question6():
     hbox:
@@ -259,7 +259,7 @@ screen question6():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nHe __________ like ice cream.\n\na. don't\nb. doesn't\nc. isn't\nd. not"
+            text "Which word belongs in the blank space?\nHe __________ like ice cream.\n\na. want\nb. doesn't\nc. isn't\nd. not"
 
 screen question7():
     hbox:
@@ -271,7 +271,7 @@ screen question7():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nShe _______ a cat.\n\na. have \nb. has \nc. is have\nd. not have"
+            text "Which word belongs in the blank space?\nShe _______ a cat.\n\na. haves \nb. has \nc. is have\nd. not have"
 
 screen question8():
     hbox:
@@ -307,7 +307,7 @@ screen question10():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "Which word belongs in the blank space?\nWe didn't _________ to the party.\n\na. didn't went \nb. didn't go \nc. don't go\nd. wasn't go"
+            text "Which word belongs in the blank space?\nWe _________ to the party.\n\na. didn't went \nb. didn't go \nc. don't go\nd. wasn't go"
 
 
 
@@ -331,7 +331,7 @@ screen question11():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "1. What is the definition of \'apprehensive'?.\n\na. feeling nervous or worried\nb. having a lot of knowledge or experience\nc. behaving in a showy way to impress others\nd. causing disgust or horror"
+            text "What is the definition of \'apprehensive'?.\n\na. feeling nervous or worried\nb. having a lot of knowledge or experience\nc. behaving in a showy way to impress others\nd. causing disgust or horror"
 
 screen question12():
     hbox:
@@ -343,7 +343,7 @@ screen question12():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "2. What is the definition of 'conjecture'?.\n\na. a fact or piece of information that is known\nb. a conclusion based on incomplete evidence\nc. the feeling of being grateful for something\nd. a state of confusion or uncertainty"
+            text "What is the definition of 'conjecture'?.\n\na. a fact or piece of information that is known\nb. a conclusion based on incomplete evidence\nc. the feeling of being grateful for something\nd. a state of confusion or uncertainty"
 
 screen question13():
     hbox:
@@ -355,7 +355,7 @@ screen question13():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "3. What is the definition of 'diligent'?.\n\na. showing great attention to detail or effort\nb. unwilling to give up or compromise\nc. characterized by a lack of order or planning\nd. having a tendency to change one's mind frequently"
+            text "What is the definition of 'diligent'?.\n\na. showing great attention to detail or effort\nb. unwilling to give up or compromise\nc. characterized by a lack of order or planning\nd. having a tendency to change one's mind frequently"
 
 screen question14():
     hbox:
@@ -367,7 +367,7 @@ screen question14():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "4. What is the definition of 'indignant'?.\n\na. feeling angry or annoyed about something unfair\nb. lacking energy or enthusiasm\nc. showing a lack of interest or concern\nd. having a tendency to avoid social situations"
+            text "What is the definition of 'indignant'?.\n\na. feeling angry or annoyed about something unfair\nb. lacking energy or enthusiasm\nc. showing a lack of interest or concern\nd. having a tendency to avoid social situations"
 
 screen question15():
     hbox:
@@ -379,7 +379,7 @@ screen question15():
             yalign 0.5
             padding (50,100)
             margin (0,0,10,0)
-            text "5. What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
+            text "What is the definition of 'resilient'?.\n\na. having a tendency to take risks or be impulsive\nb. characterized by a lack of attention or focus\nc. showing a lack of emotion or enthusiasm\nd. able to recover quickly from difficulties or setbacks"
 
 screen question16():
     hbox:
