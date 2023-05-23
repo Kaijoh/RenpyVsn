@@ -20,6 +20,33 @@ label bfirstvillain:
     ct "so make sure you read and answer all the question correctly. thats all and GOODLUCK [player_name]!"
     hide screen arrows with dissolve
 
+    show blacks with dissolve 
+
+    ct "EASY!"
+
+    ct " GRAMMAR PUZZLE "
+    
+    hide blacks 
+    show board with dissolve
+
+    n "Now lets go through what grammar really is."
+    
+    ct "What is grammar?"
+    
+    n "grammar, rules of a language governing the sounds, words, sentences, and other elements, as well as their combination and interpretation. The word grammar also denotes the study of these abstract features or a book presenting these rules."
+    
+    ct "what is its purpose?"
+    
+    n "Grammar explains the forms and structure of words (called morphology) and how they are arranged in sentences (called syntax). In other words, grammar provides the rules for common use of both spoken and written language so we can more easily understand each other."
+    
+    ct "Why grammar is important?"
+    
+    n "Grammar is important because it provides information that helps the reader's comprehension. It is the structure that conveys precise meaning from the writer to the audience. Eliminate grammatical errors from your writing, and reward your readers with clear communication."
+    
+    ct "LETS START! GOODLUCK!"
+    hide board with dissolve
+
+
     
     jump bpquiz1
 
@@ -59,6 +86,33 @@ label bsecondvillain:
     "kakakakakakakakakakakakakakakakka"
     "now lets start"
     hide bluemad with dissolve
+
+    window hide
+
+    show blacks with dissolve 
+
+    ct "MEDIUM!"
+
+    ct " VOCABULARY PUZZLE "
+    
+    hide blacks 
+    show board with dissolve
+
+    n "Now lets go through what vocabulary really is."
+    
+    ct "What is vocabulary?"
+    
+    n "vocabulary, a list or collection of words or of words and phrases usually alphabetically arranged and explained or defined"
+    
+    ct "what is its purpose?"
+    
+    n "For many people, the word vocabulary is primarily associated with the number of words that a person knows; one either has a large or a small vocabulary."
+    
+    n "Vocabulary may indeed refer to the collection of words known by an individual or by a large group of people. It may also signify the body of specialized terms in a field of study or activity (“the vocabulary of science”). It may designate a physical object, such as a book, in which a collection of (usually alphabetized) words is defined or explained. And it may name things other than words, such as “a list or collection of terms or codes available for use,” “a set or list of nonverbal symbols” (such as marine alphabet flag signals), and “a set of expressive forms used in an art” (as in “the vocabulary of dance”)."
+    
+    ct "LETS START! GOODLUCK!"
+    hide board with dissolve
+
     jump bpquiz2
 
 label bsecondvillainwin:
@@ -77,8 +131,6 @@ label bsecondvillainwin:
     hide screen addpages
 
     jump bAct3_3
-   
-
 
 label bsecondvillainlose:
     show bluemad at center with moveinbottom
@@ -97,6 +149,23 @@ label bthirdvillain:
     "kukukukukukukukukukukukukukukuku"
     "now lets start"
     hide redmad with dissolve
+
+    window hide
+
+    show blacks with dissolve 
+
+    ct "HARD!"
+
+    ct " QUIZ "
+    
+    hide blacks 
+    show board with dissolve
+
+    n "Now it's time to spice things up."
+    
+    ct "From this point onwards try to apply the knowledge you gain in the last levels and figure out the rest"
+
+    ct "LETS START! GOODLUCK!"
     jump bquiz1
 
 label bthirdvillainwin:

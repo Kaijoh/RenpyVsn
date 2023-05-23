@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/recy/playground.rpy", line 128: 'return' is not a keyword argument or valid child for the imagebutton statement.
-    return "fail"
-          ^
+File "game/scripts/boyvillains.rpy", line 37: expected 'simple_expression' not found.
+    hide board with
+                   ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon May 22 16:41:55 2023
+Tue May 23 16:15:22 2023

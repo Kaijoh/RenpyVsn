@@ -1,90 +1,115 @@
 label test:
     window hide
-    show screen bonus1
+    show board
 
+    show screen t1
+    
     
     pause
 
-# label bround:
-#     window hide
 
-#     show screen bonusimage
 
-#     pause 
 
-#     hide screen bonusimage
+screen t1():
+    imagebutton:
+        xalign 0.88
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "tip"
+        action ShowMenu("t1w")
 
-#     pause 0.5
 
-#     call expression next_rnd_in_list(question_masterlist6) 
-            
-#     if _return == "pass":
+screen t1w():
+    vbox:
+        xalign 0.5
+        yalign 0.2
+        frame:
+            background "#706969"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "                              \t!!!WARNING!!!\t\n\n         Your are about to view the correct answer \nwhich will hinder in your journey on learning english!\n\n                DO YOU STILL WISH TO CONTINUE? "
 
-#         jump gfirstvillainwin
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 10
+        imagebutton:
+            idle  "yes"
+            action [ToggleScreen("t1a"), ToggleScreen("t1w")]
+
+        imagebutton:
+            idle  "no"
+            action Return()
     
-#     return
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action Return()
 
+screen t1a():
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        frame:
+            background "#706969"
+            xalign 0.5
+            yalign 0.5
+            padding (50,50)
+            margin (0,0,10,0)
+            text "Answer! \n\nWhen talking about the third person singular (she, he, it), we use the verb form has to indicate possession or presence."
 
-# label bround1:
-#     window hide
-#     show screen bonus1
-    
-
-#     ct "Nice! You got a additional permanent heart that would aid you in your journey ^_^"
-
-#     hide screen bonus1
-    
-#     jump fail
-
-# label bround2:
-#     window hide
-
-#     show screen bonus2
-
-#     $ bonus2 = renpy.input("input your answer here!")
-
-#     if bonus2.lower() in ["animals"]:
-#         hide screen bonus2
-#         ct "Wonderful [player_name]!"
-#         ct "You got a additional permanent heart that would aid you in your journey ^_^"
-#         $ max_lives += 1
-#         $ lives += 1
-#         return "pass"
-
-    
-#     jump Fail
-
-# label bround3:
-#     window hide
-#     hide screen bonus2
-
-#     show screen bonus3
-
-#     $ bonus3 = renpy.input("input your answer here!")
-
-#     if bonus3.lower() in ["duck"]:
-#         hide screen bonus3
-#         ct "Wonderful [player_name]!"
-#         ct "You got a additional permanent heart that would aid you in your journey ^_^"
-#         $ max_lives += 1
-#         $ lives += 1
-#         return "pass"
-
-    
-#     jump Fail
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        idle "close"
+        action Return()
 
 
 
 
 
-# label Fail:
-#     hide screen bonus1
 
-#     ct "Awhhhhh You missed the bonus round :'(. Better luck next time!"
 
-#     jump gscoref2
 
-#bonus screens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 screen bonusimage():
     hbox:
         xalign 0.5

@@ -25,6 +25,8 @@ image pic_12 = im.Scale("backgrounds/magical-cave.png", 1920, 1080)
 image pic_13 = im.Scale("backgrounds/ruins.jpg", 1920, 1080)
 image pic_14 = im.Scale("backgrounds/club-room.png", 1920, 1080)
 image pic_15 = im.Scale("backgrounds/classroom.png", 1920, 1080)
+image board = im.Scale("board.png", 1920, 1080)
+image blacks = im.Scale("blacks.png", 1920, 1080)
 
 
 image idle_1 = im.Scale("idle.jpg", 1920, 1080) 
@@ -99,7 +101,7 @@ label variable1:
 
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
-    jump bAct1
+    jump test
     
 
 label variable2: 

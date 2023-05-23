@@ -32,6 +32,7 @@ label bpquestion_001:
         $ player_score += 1
         hide screen question1
         ct "Wonderful! guess you have a knacked on this thing. Now lets spice things up ;)"
+
         return "pass"
 
     $ player_score -= 1
@@ -344,7 +345,7 @@ label bpquestion_011:
 
 label bpquestion_012:
     show screen question12
-    $ answer12 = renpy.input("enter the lette of the correct answer ")
+    $ answer12 = renpy.input("enter the letter of the correct answer ")
 
     if answer12.lower() in ["b"]:
         hide screen question12
@@ -368,7 +369,7 @@ label bpquestion_012:
 
 label bpquestion_013:
     show screen question13
-    $ answer13 = renpy.input("enter the lette of the correct answer ")
+    $ answer13 = renpy.input("enter the letter of the correct answer ")
 
     if answer13.lower() in ["a"]:
         hide screen question13
@@ -392,7 +393,7 @@ label bpquestion_013:
 
 label bpquestion_014:
     show screen question14
-    $ answer14 = renpy.input("enter the lette of the correct answer ")
+    $ answer14 = renpy.input("enter the letter of the correct answer ")
 
     if answer14.lower() in ["a"]:
         hide screen question14
@@ -416,7 +417,7 @@ label bpquestion_014:
 
 label bpquestion_015:
     show screen question15
-    $ answer15 = renpy.input("enter the lette of the correct answer ")
+    $ answer15 = renpy.input("enter the letter of the correct answer ")
 
     if answer15.lower() in ["d"]:
         hide screen question15
@@ -440,7 +441,7 @@ label bpquestion_015:
 
 label bpquestion_016:
     show screen question16
-    $ answer16 = renpy.input("enter the lette of the correct answer ")
+    $ answer16 = renpy.input("enter the letter of the correct answer ")
 
     if answer16.lower() in ["b"]:
         hide screen question16
@@ -464,7 +465,7 @@ label bpquestion_016:
 
 label bpquestion_017:
     show screen question17
-    $ answer17 = renpy.input("enter the lette of the correct answer ")
+    $ answer17 = renpy.input("enter the letter of the correct answer ")
 
     if answer17.lower() in ["b"]:
         hide screen question17
@@ -488,7 +489,7 @@ label bpquestion_017:
 
 label bpquestion_018:
     show screen question18
-    $ answer18 = renpy.input("enter the lette of the correct answer ")
+    $ answer18 = renpy.input("enter the letter of the correct answer ")
 
     if answer18.lower() in ["b"]:
         hide screen question18
@@ -512,7 +513,7 @@ label bpquestion_018:
 
 label bpquestion_019:
     show screen question19
-    $ answer19 = renpy.input("enter the lette of the correct answer ")
+    $ answer19 = renpy.input("enter the letter of the correct answer ")
 
     if answer19.lower() in ["d"]:
         hide screen question19
@@ -536,7 +537,7 @@ label bpquestion_019:
 
 label bpquestion_020:
     show screen question20
-    $ answer20 = renpy.input("enter the lette of the correct answer ")
+    $ answer20 = renpy.input("enter the letter of the correct answer ")
 
     if answer20.lower() in ["a"]:
         hide screen question20
