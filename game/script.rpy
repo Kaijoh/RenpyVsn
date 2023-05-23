@@ -26,7 +26,7 @@ image blacks = im.Scale("blacks.png", 1920, 1080)
 
 
 image idle_1 = im.Scale("idle.jpg", 1920, 1080) 
-image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.ogv", loop=True) 
+image teleport = Movie(size=(1920, 1080), channel="movie", play="images/Videos/tele.ogv", loop=True) 
 
 image mytext = ParameterizedText(style="something")
 
@@ -96,7 +96,7 @@ label variable1:
     $ player_name = renpy.input("what would you like to name your character?") 
 
     scene black
-    n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
+    n "Synopsis: You, as the protagonist, are a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump bAct1
     
 
@@ -105,7 +105,7 @@ label variable2:
     $ player_name = renpy.input("what would you like to name your character?") 
     
     scene black
-    n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
+    n "Synopsis: You, as the protagonist, are a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump gAct1
     
 label end_game2:

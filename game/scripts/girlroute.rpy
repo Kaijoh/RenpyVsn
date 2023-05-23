@@ -4,7 +4,7 @@ label gAct1:
     ct "Act 1:"
     with Pause(1)
     show pic_5
-    n "The protagonist is cleaning out the school library when she come across a mysterious book...."
+    n "You are cleaning out the school library when you come across a mysterious book."
 
     hide pic_5
 
@@ -14,7 +14,7 @@ label gAct1:
 
     player_name "i haven't seen anything like this before"
 
-    n "the protagonist picked up the book."
+    n "You picked up the book."
 
     menu:
         "open the book":
@@ -26,7 +26,7 @@ label gAct1:
 
     player_name "'The Lost Pages'? It looks pretty old...and it's missing some pages too."
     
-    n "The protagonist starts to read the book and suddenly gets transported into the story world."
+    n "You start to read the book and suddenly get transported into the storyworld."
 
     hide pic_6
     show pic_7 with hpunch
@@ -41,7 +41,7 @@ label gAct1:
 
     show pic_8
 
-    n "The protagonist meets a friendly character, named Robin, who offers to help them navigate this new world."
+    n "You meet a friendly character named Robin, who offers to help them navigate this new world."
     
     show robinnormal at left with moveinleft
 
@@ -74,7 +74,7 @@ label gAct2:
     ct "Act 2: Search for the Missing Pages"
     with Pause(1)
     show pic_9
-    n "The protagonist and Robin set off on a quest to find the missing pages. Along the way, they meet various characters and encounter challenges."
+    n "You and Robin set off on a quest to find the missing pages. Along the way, they meet various characters and encounter challenges."
 
     show girlsmile at right with dissolve
 
@@ -109,7 +109,7 @@ label gAct2:
 
     scene black
     show pic_11
-    n "The protagonist and Robin venture into the Forbidden Forest, facing obstacles and challenges along the way."
+    n "You and Robin venture into the Forbidden Forest, facing obstacles and challenges along the way."
 
     menu:
 
@@ -127,7 +127,7 @@ label gAct3:
     with Pause(1)
     show pic_11
 
-    n "As they search for the missing pages, the protagonist encounters various English concepts and learns about them through fun and interactive puzzles."
+    n "As you search for the missing pages, you encounter various English concepts and learn about them through fun and interactive puzzles."
 
     show girlsurprised at right with moveinright
     player_name "Hey Robin, what's a simile?"
@@ -155,11 +155,12 @@ label gAct3:
 label gAct3_2:
     #quiz
     scene black
-    n "the protagonist and robin continued their journey to the magical cave....."
+    n "You and Robin continued their journey to the magical cave."
     jump gsecondvillain
 
 label gAct3_3:
     scene black
+    n "You and Robin continued their journey to the ruins."
     #grammar puzzle
     jump gthirdvillain
 
@@ -198,7 +199,7 @@ label gAct4:
     with Pause(1)
     show pic_5 with dissolve
 
-    n "The protagonist returns to reality and reflects on their adventure."
+    n "You return to reality and reflect on your adventure."
     
     show girlsmile at right with moveinright
     player_name "Wow, that was incredible. I can't believe I actually went on a quest to find missing pages in a book. And I learned so much about English language too."
@@ -224,7 +225,7 @@ label gAct5:
     n "the next day......"
 
     show pic_4 with dissolve
-    n "The protagonist goes back to school and is excited to apply their newfound knowledge."
+    n "You go back to school and are excited to apply your newfound knowledge."
 
     show pic_15
     show girlsurprised at right with moveinright
@@ -238,7 +239,7 @@ label gAct5:
     hide girlsurprised
     hide girlsmile
 
-    n "The protagonist go home and starts studying even harder."
+    n "You go home and start studying even harder."
 
 label gAct6:
     scene black
@@ -247,13 +248,13 @@ label gAct6:
     with Pause(1)
 
     show pic_15 with dissolve
-    n "The day of the quiz arrives and the protagonist is nervous but confident."
+    n "The day of the quiz arrives, and you are nervous but confident."
 
     show girlsmile at right with moveinright
     player_name "I've got this. I know all about adjectives, adverbs, and pronouns. Bring it on!"
     hide girlsmile with moveoutright
 
-    n "The protagonist started answering all the questions in the test paper."
+    n "You started answering all the questions on the test paper."
 
     menu:
         "i think i did great on the quiz":
@@ -277,7 +278,7 @@ label gAct7:
     with Pause(1)
     show pic_5 with dissolve
 
-    n "The protagonist looks back on their journey and feels proud of how far they've come."
+    n "You look back on their journey and feel proud of how far they've come."
 
     player_name "I can't believe I went on an adventure in a book and then competed in an English language competition."
 
