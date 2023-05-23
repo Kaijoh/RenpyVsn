@@ -4,34 +4,34 @@ label bquiz1():
     show screen hearts
     show screen books
 
-    call expression next_rnd_in_list( question_masterlist )
+    call expression next_rnd_in_list( question_masterlist1 )
 
     if _return == "pass":
-        call expression next_rnd_in_list(question_masterlist)
+        call expression next_rnd_in_list(question_masterlist1)
 
         if _return == "pass":
-            call expression next_rnd_in_list(question_masterlist)
+            call expression next_rnd_in_list(question_masterlist1)
             
             if _return == "pass":
-                call expression next_rnd_in_list(question_masterlist)
+                call expression next_rnd_in_list(question_masterlist1)
 
                 if _return == "pass":
-                    call expression next_rnd_in_list(question_masterlist)
+                    call expression next_rnd_in_list(question_masterlist1)
 
                     if _return == "pass":
-                        call expression next_rnd_in_list(question_masterlist)
+                        call expression next_rnd_in_list(question_masterlist1)
 
                         if _return == "pass":
-                            call expression next_rnd_in_list(question_masterlist)
+                            call expression next_rnd_in_list(question_masterlist1)
 
                             if _return == "pass":
-                                call expression next_rnd_in_list(question_masterlist)  
+                                call expression next_rnd_in_list(question_masterlist1)  
 
                                 if _return == "pass":
-                                    call expression next_rnd_in_list(question_masterlist)    
+                                    call expression next_rnd_in_list(question_masterlist1)    
                                       
                                     if _return == "pass":
-                                        call expression next_rnd_in_list(question_masterlist)      
+                                        call expression next_rnd_in_list(question_masterlist1)      
                 
                                         if _return == "pass":
                                             n "nice you got it"

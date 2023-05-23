@@ -9,10 +9,6 @@ define ct = Character(None, what_color="#FFFFFF", what_background="#000000", kin
 define n = Character(None, what_color="#FFFFFF", what_background="#000000", kind=centered, what_line_spacing=20, what_size=45, what_outlines=[(5, "#000", 0, 0 )])
  
 # backgrounds 
-image pic_1 = im.Scale("1.png", 1920, 1080) 
-image pic_2 = im.Scale(".png", 1920, 1080) 
-image pic_3 = im.Scale("3.png", 1920, 1080) 
-
 image pic_4 = im.Scale("backgrounds/school-gate.png", 1920, 1080)
 image pic_5 = im.Scale("backgrounds/library.png", 1920, 1080)
 image pic_6 = im.Scale("backgrounds/book-floora.jpg", 1920, 1080)
@@ -30,7 +26,7 @@ image blacks = im.Scale("blacks.png", 1920, 1080)
 
 
 image idle_1 = im.Scale("idle.jpg", 1920, 1080) 
-image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.ogv", loop=True) 
+image teleport = Movie(size=(1920, 1080), channel="movie", play="Videos/tele.avi", loop=True) 
 
 image mytext = ParameterizedText(style="something")
 
@@ -101,7 +97,7 @@ label variable1:
 
     scene black
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
-    jump test
+    jump bAct1
     
 
 label variable2: 
@@ -221,3 +217,6 @@ label splashscreen3:
 
     return
     
+label go:
+
+    ct "SCORE: [player_score]"

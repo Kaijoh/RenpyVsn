@@ -162,6 +162,7 @@ label gthirdvillain:
     ct "From this point onwards try to apply the knowledge you gain in the last levels and figure out the rest"
 
     ct "LETS START! GOODLUCK!"
+    hide board with dissolve
 
     jump gquiz1
 
