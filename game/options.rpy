@@ -16,7 +16,7 @@
 
 ## Options.rpy
 
-
+define config.rollback_enabled = False
 
 
 ## Basics ######################################################################

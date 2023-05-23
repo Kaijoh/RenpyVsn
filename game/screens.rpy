@@ -256,40 +256,40 @@ style choice_button_text is default:
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
 
-screen quick_menu():
+# screen quick_menu():
 
-    ## Ensure this appears on top of other screens.
-    zorder 100
+#     ## Ensure this appears on top of other screens.
+#     zorder 100
 
-    if quick_menu:
+#     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+#         hbox:
+#             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+#             xalign 0.5
+#             yalign 1.0
 
-            imagemap:
+            # imagemap:
 
-                ground "gui/overlay/quickmenu_idle.png"
-                idle "gui/overlay/quickmenu_idle.png"
-                hover "gui/overlay/quickmenu_hover.png"
-                selected_idle "gui/overlay/quickmenu_hover.png"
-                selected_hover "gui/overlay/quickmenu_hover.png"
+            #     ground "gui/overlay/quickmenu_idle.png"
+            #     idle "gui/overlay/quickmenu_idle.png"
+            #     hover "gui/overlay/quickmenu_hover.png"
+            #     selected_idle "gui/overlay/quickmenu_hover.png"
+            #     selected_hover "gui/overlay/quickmenu_hover.png"
 
-                hotspot (969, 1021, 46, 46) action Rollback()
-                hotspot (1041, 1021, 46, 46) action ShowMenu('history')
-                hotspot (1113, 1021, 46, 46) action Skip() alternate Skip(fast=True, confirm=True)
-                hotspot (1186, 1021, 46, 46) action Preference("auto-forward", "toggle")
-                hotspot (1258, 1021, 46, 46) action ShowMenu('save')
-                hotspot (1330, 1021, 46, 46) action ShowMenu('preferences')
+            #     hotspot (969, 1021, 46, 46) action Rollback()
+            #     hotspot (1041, 1021, 46, 46) action ShowMenu('history')
+            #     hotspot (1113, 1021, 46, 46) action Skip() alternate Skip(fast=True, confirm=True)
+            #     hotspot (1186, 1021, 46, 46) action Preference("auto-forward", "toggle")
+            #     hotspot (1258, 1021, 46, 46) action ShowMenu('save')
+            #     hotspot (1330, 1021, 46, 46) action ShowMenu('preferences')
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
-init python:
-    config.overlay_screens.append("quick_menu")
+# init python:
+#     config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+# default quick_menu = True
 
 style quick_button is default
 style quick_button_text is button_text
@@ -476,7 +476,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                     viewport:
                         yinitial yinitial
                         scrollbars "vertical"
-                        mousewheel True
+                        mousewheel False
                         draggable True
                         pagekeys True
 
@@ -492,7 +492,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                         yinitial yinitial
 
                         scrollbars "vertical"
-                        mousewheel True
+                        mousewheel False
                         draggable True
                         pagekeys True
 
@@ -951,7 +951,7 @@ screen history():
             yinitial 1.0
 
             draggable True
-            mousewheel True
+            mousewheel False
             scrollbars "vertical"
 
             for h in _history_list:

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/boyvillains.rpy", line 37: expected 'simple_expression' not found.
-    hide board with
-                   ^
+File "game/options.rpy", line 21: expected statement.
+    config.disable_mousewheel = False
+                              ^
 
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue May 23 16:15:22 2023
+Ren'Py Version: Ren'Py 8.1.0.23051307
+Tue May 23 22:51:38 2023

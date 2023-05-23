@@ -1,4 +1,6 @@
-﻿# character names 
+﻿
+
+# character names 
 define s = Character("Sylvie", color="#ff009d") 
 define r = Character("Robin", color="#c00606") 
 # define n = Character("Narrator", color="#460beb") 
@@ -78,6 +80,7 @@ label splashscreen2:
 
 # start of the game
 label start:
+    
     # Display a message and show an alert box when a button is clicked
     jump splashscreen2
     
