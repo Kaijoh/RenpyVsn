@@ -63,17 +63,17 @@ screen t1a():
 
 
 
-screen t1():
+screen t2():
     imagebutton:
         xalign 0.88
         yalign 0.0
         xoffset -30
         yoffset 30
         idle "tip"
-        action ShowMenu("t1w")
+        action ShowMenu("t2w")
 
 
-screen t1w():
+screen t2w():
     vbox:
         xalign 0.5
         yalign 0.2
@@ -91,7 +91,7 @@ screen t1w():
         spacing 10
         imagebutton:
             idle  "yes"
-            action [ToggleScreen("t1a"), ToggleScreen("t1w")]
+            action [ToggleScreen("t2a"), ToggleScreen("t2w")]
 
         imagebutton:
             idle  "no"
@@ -105,7 +105,7 @@ screen t1w():
         idle "close"
         action Return()
 
-screen t1a():
+screen t2a():
     vbox:
         xalign 0.5
         yalign 0.5
@@ -128,7 +128,7 @@ screen t1a():
 
 
 
-screen t1():
+screen t3():
     imagebutton:
         xalign 0.88
         yalign 0.0
@@ -138,7 +138,7 @@ screen t1():
         action ShowMenu("t1w")
 
 
-screen t1w():
+screen t3w():
     vbox:
         xalign 0.5
         yalign 0.2
@@ -156,7 +156,7 @@ screen t1w():
         spacing 10
         imagebutton:
             idle  "yes"
-            action [ToggleScreen("t1a"), ToggleScreen("t1w")]
+            action [ToggleScreen("t3a"), ToggleScreen("t3w")]
 
         imagebutton:
             idle  "no"
@@ -170,7 +170,7 @@ screen t1w():
         idle "close"
         action Return()
 
-screen t1a():
+screen t3a():
     vbox:
         xalign 0.5
         yalign 0.5
@@ -193,7 +193,7 @@ screen t1a():
 
 
 
-screen t1():
+screen t4():
     imagebutton:
         xalign 0.88
         yalign 0.0
@@ -203,7 +203,7 @@ screen t1():
         action ShowMenu("t1w")
 
 
-screen t1w():
+screen t4w():
     vbox:
         xalign 0.5
         yalign 0.2
@@ -221,7 +221,7 @@ screen t1w():
         spacing 10
         imagebutton:
             idle  "yes"
-            action [ToggleScreen("t1a"), ToggleScreen("t1w")]
+            action [ToggleScreen("t4a"), ToggleScreen("t4w")]
 
         imagebutton:
             idle  "no"
@@ -235,7 +235,7 @@ screen t1w():
         idle "close"
         action Return()
 
-screen t1a():
+screen t4a():
     vbox:
         xalign 0.5
         yalign 0.5
