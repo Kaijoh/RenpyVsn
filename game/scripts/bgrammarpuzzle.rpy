@@ -38,9 +38,9 @@ label bpquestion_001:
     $ lives -= 1
 
     hide screen question1
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -62,9 +62,9 @@ label bpquestion_002:
     $ lives -= 1
 
     hide screen question2
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -87,9 +87,9 @@ label bpquestion_003:
     $ lives -= 1
 
     hide screen question3
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -111,9 +111,9 @@ label bpquestion_004:
     $ lives -= 1
 
     hide screen question4
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. hehe ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -136,9 +136,9 @@ label bpquestion_005:
     $ lives -= 1
 
     hide screen question5
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -161,9 +161,9 @@ label bpquestion_006:
     $ lives -= 1
 
     hide screen question6
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -186,9 +186,9 @@ label bpquestion_007:
     $ lives -= 1
 
     hide screen question7
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -211,9 +211,9 @@ label bpquestion_008:
     $ lives -= 1
 
     hide screen question8
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -236,9 +236,9 @@ label bpquestion_009:
     $ lives -= 1
 
     hide screen question9
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -261,9 +261,9 @@ label bpquestion_010:
     $ lives -= 1
 
     hide screen question10
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -278,7 +278,7 @@ label bprogress2:
     if player_score == 5:
         jump bbround
 
-    if player_score >= 5:
+    if player_score >= 3:
         jump bfirstvillainwin
 
     jump bfirstvillainlose
@@ -333,9 +333,9 @@ label bpquestion_011:
     $ lives -= 1
 
     hide screen question11
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -357,9 +357,9 @@ label bpquestion_012:
     $ lives -= 1
 
     hide screen question12
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -381,9 +381,9 @@ label bpquestion_013:
     $ lives -= 1
 
     hide screen question13
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -405,9 +405,9 @@ label bpquestion_014:
     $ lives -= 1
 
     hide screen question14
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -429,9 +429,9 @@ label bpquestion_015:
     $ lives -= 1
 
     hide screen question15
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -453,9 +453,9 @@ label bpquestion_016:
     $ lives -= 1
 
     hide screen question16
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -477,9 +477,9 @@ label bpquestion_017:
     $ lives -= 1
 
     hide screen question17
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -501,9 +501,9 @@ label bpquestion_018:
     $ lives -= 1
 
     hide screen question18
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -525,9 +525,9 @@ label bpquestion_019:
     $ lives -= 1
 
     hide screen question19
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -549,9 +549,9 @@ label bpquestion_020:
     $ lives -= 1
 
     hide screen question20
-    show girlupset at right with moveinbottom
+    show boyworried at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ..."
-    hide girlupset with dissolve
+    hide boyworried with dissolve
 
     if lives <= 0:
         jump end_game
@@ -566,7 +566,7 @@ label bprogress3:
     if player_score == 12:
         jump bbroundd
 
-    if player_score >= 12:
+    if player_score >= 8:
         jump bsecondvillainwin
 
     jump bsecondvillainlose

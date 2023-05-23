@@ -297,4 +297,4 @@ label cho8:
     
 label gActclosing:
     scene
-    jump end_game
+    jump end_game2

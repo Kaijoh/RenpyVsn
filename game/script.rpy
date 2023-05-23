@@ -110,25 +110,29 @@ label variable2:
     n "Synopsis: The protagonist is a high school student who is struggling with English class. One day, while cleaning out the school library, they discover a mysterious book that seems to be missing some pages. As they begin to read the book, they are transported into the story and must find the missing pages in order to return to their own world."
     jump gAct1
     
-# label end_game:
-#     hide screen hearts
-#     hide screen books
-#     hide screen fullbooks
-#     scene black 
+label end_game2:
+    hide screen hearts
+    hide screen books
+    hide screen fullbooks
+    hide screen gameUI
+    hide screen rewardbutton
+    scene black 
 
-#     ct "GAME OVER!......"
-#     "Your score: [player_score], would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
+    ct "GAME OVER!......"
+    "Your score: [player_score], would you like to submit it? note: dont submit if you dont want your data to be seen by others" 
  
-#     menu: 
-#         "Exite Game and submit score?": 
-#             jump submit 
-#         "Play Again?": 
-#             jump notsubmit 
+    menu: 
+        "Exite Game and submit score?": 
+            jump submit 
+        "Play Again?": 
+            jump notsubmit 
 
 label end_game:
     hide screen hearts
     hide screen books
     hide screen fullbooks
+    hide screen gameUI
+    hide screen rewardbutton
     scene black 
     python: 
         import requests 

@@ -26,6 +26,9 @@ label bfirstvillain:
 label bfirstvillainwin:
     show greensad at center with moveinbottom
     "Ughhhh.. You have beaten me in my own challenge :(. My brothers will avenge me!!!"
+    "And if you want to get the next page, you must go to the magical cave"
+    "where my brother resides and he's keeping an eye on that page. so you better watch out."
+    "aight see you kid."
     hide greensad with dissolve
 
     window hide
@@ -61,6 +64,8 @@ label bsecondvillain:
 label bsecondvillainwin:
     show bluesad at center with moveinbottom
     "Ughhhh.. You have beaten me in my own challenge :(. My brothers will avenge me!!!"
+    "But im not that bad so i will tell you the next page location"
+    "It's in the Ruins where my third brother reside. so goodluck kid!"
     hide bluesad with dissolve
 
     window hide

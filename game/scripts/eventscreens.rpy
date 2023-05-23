@@ -12,17 +12,17 @@ screen choosechar:
             margin (0,0,10,0)
             text "Choose your route."
 
-screen choosereward:
-    hbox:
-        xalign 0.5
-        yalign 0.01
-        frame:
-            background "#706969"
-            xalign 0.5
-            yalign 0.5
-            padding (50,50)
-            margin (0,0,10,0)
-            text "Exchange Reward.\nYou can exchange your book page here for a permanent additional heart that will help you in your jouney "
+# screen choosereward:
+#     hbox:
+#         xalign 0.5
+#         yalign 0.01
+#         frame:
+#             background "#706969"
+#             xalign 0.5
+#             yalign 0.5
+#             padding (50,50)
+#             margin (0,0,10,0)
+#             text "Exchange Reward.\nYou can exchange your book page here for a permanent additional heart that will help you in your jouney "
 
 screen choose_route: 
     hbox: 
@@ -146,7 +146,7 @@ screen rewardshop():
             yalign 0.5
             padding (50,50)
             margin (0,0,10,0)
-            text "                   EXCHANGE REWARD.\n\nYou can exchange your book page here for a \npermanent additional heart that will help you\nin your jouney "
+            text "                   EXCHANGE REWARD.\n\nYou can exchange your book page here for a \npermanent additional heart that will help you\nin your jouney.\n1 page = 1 heart "
     vbox:
         xalign 0.5
         yalign 0.5
@@ -158,10 +158,7 @@ screen rewardshop():
             hover "exchange" 
             if pages >= 1:
                 action [SetVariable("pages", pages - 1), SetVariable("max_lives", max_lives + 1), SetVariable("lives", lives + 1), ToggleScreen("adisplay"), ToggleScreen("rewardshop"), ]
-            else:
-                action ToggleScreen("adisplay")
                 
-
         # imagebutton: 
         #     idle "exchange2" 
         #     hover "exchange" 

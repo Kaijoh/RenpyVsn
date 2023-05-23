@@ -594,7 +594,7 @@ label gscoref:
     jump gprogress1
 
 label gprogress1:
-    if player_score >= 7:
+    if player_score >= 15:
         jump gthirdvillainwin
     else:
         jump gthirdvillainlose

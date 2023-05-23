@@ -57,9 +57,9 @@ label bquestion_001:
     $ player_score -= 1
     $ lives -= 1
 
-    show girlupset at right with hpunch
+    show boyupset at right with hpunch
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -83,9 +83,9 @@ label bquestion_002:
     $ player_score -= 1
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -109,9 +109,9 @@ label bquestion_003:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -135,9 +135,9 @@ label bquestion_004:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -161,9 +161,9 @@ label bquestion_005:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -187,9 +187,9 @@ label bquestion_006:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -213,9 +213,9 @@ label bquestion_007:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -239,9 +239,9 @@ label bquestion_008:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -265,9 +265,9 @@ label bquestion_009:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -292,9 +292,9 @@ label bquestion_010:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -319,9 +319,9 @@ label bquestion_011:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -346,9 +346,9 @@ label bquestion_012:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -373,9 +373,9 @@ label bquestion_013:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -400,9 +400,9 @@ label bquestion_014:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -427,9 +427,9 @@ label bquestion_015:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -454,9 +454,9 @@ label bquestion_016:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -481,9 +481,9 @@ label bquestion_017:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -508,9 +508,9 @@ label bquestion_018:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -535,9 +535,9 @@ label bquestion_019:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -562,9 +562,9 @@ label bquestion_020:
     $ player_score -= 1     
     $ lives -= 1
 
-    show girlupset at right with moveinbottom
+    show boyupset at right with moveinbottom
     ct "You got it wrong. Please review it again or do some research. ^_^..."
-    hide girlupset with dissolve
+    hide boyupset with dissolve
 
     if lives <= 0:
         jump end_game
@@ -577,7 +577,7 @@ label bscoref:
     jump bprogress1
 
 label bprogress1:
-    if player_score >= 1:
+    if player_score >= 15:
         jump bthirdvillainwin
     else:
         jump bthirdvillainlose

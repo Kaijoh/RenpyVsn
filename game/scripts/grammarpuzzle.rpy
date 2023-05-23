@@ -278,7 +278,7 @@ label gprogress2:
     if player_score == 5:
         jump gbround
 
-    if player_score >= 5:
+    if player_score >= 3:
         jump gfirstvillainwin
 
     jump gfirstvillainlose
@@ -565,7 +565,7 @@ label gprogress3:
     if player_score == 12:
         jump gbroundd
 
-    if player_score >= 12:
+    if player_score >= 8:
         jump gsecondvillainwin
 
     jump gsecondvillainlose

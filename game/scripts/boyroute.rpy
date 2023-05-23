@@ -298,4 +298,4 @@ label cho4:
     
 label bActclosing:
     scene
-    jump end_game
+    jump end_game2
